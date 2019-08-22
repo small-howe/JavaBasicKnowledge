@@ -9,9 +9,11 @@ public class forDemo {
          *  System.out.println("跑了第"+i+"圈了");
          * }
          */
-        for (int i=0;i<5;i++){
+        for (int i=0;i<=5;i++){
             System.out.println("跑了第"+i+"圈了");
         }
+        int num = (1<3) ? 1:2;
+
 
     }
 }
