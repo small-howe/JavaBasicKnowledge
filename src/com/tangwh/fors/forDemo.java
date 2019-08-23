@@ -1,5 +1,7 @@
 package com.tangwh.fors;
 
+import javax.sound.midi.SoundbankResource;
+
 public class forDemo {
 
     public static void main(String[] args) {
@@ -13,11 +15,6 @@ public class forDemo {
             System.out.println("跑了第"+i+"圈了");
         }
         int num = (1<3) ? 1:2;
-int a=1;
-        for(int i =1 ; i<=100; i++){
-            a=a++;
 
-        }
-        System.out.println(a);
     }
 }
