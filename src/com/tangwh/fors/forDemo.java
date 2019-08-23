@@ -16,5 +16,16 @@ public class forDemo {
         }
         int num = (1<3) ? 1:2;
 
+        System.out.println(num);
+       int m=1;
+    int n=2;
+    //m :   1                    1          0
+    //n :           3    3           1
+    //sum   1   +  3  -  3   -  1  + 2   -  0
+    int sum=m++ + ++n -  n-- - --m + n-- - --m;
+        //    //
+        System.out.println(m);
+        System.out.println(n);
+        System.out.println(sum);
     }
 }
