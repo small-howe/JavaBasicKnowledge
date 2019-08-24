@@ -1,10 +1,16 @@
-package com.tangwh.fors;
+package com.tangwh.for_Demo;
 
-
+/**
+ * for 循环
+ */
 
 public class forDemo {
+
     public static void main(String[] args) {
         int[] list = new int[]{5,4,8,6,4,1,3,4,5,97,1,2};
+        /**
+         * 冒泡排序
+         */
          bubbleSort_2(list);
     }
 
@@ -62,7 +68,7 @@ public class forDemo {
 
         }
         for (int i1 : list) {
-            System.out.print(i1);
+            System.out.print(i1+" ");
         }
 
 

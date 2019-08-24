@@ -1,4 +1,4 @@
-package com.tang.singleton;
+package com.tangwh.singleton;
 
 /**
  * 设计模式之 单例模式

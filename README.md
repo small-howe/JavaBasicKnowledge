@@ -113,9 +113,10 @@
  //  private static Singleton singleton; // 懒汉式加载
   // 3.公开的静态的方法返回当前对象
   public static Singleton getSingleton(){
-   //   if(singleton==null){
-   //  singleton =  new Singleton();   懒汉式加载
-   //}
+  /*  if(singleton==null){
+     singleton =  new Singleton();   懒汉式加载
+   }
+   */
           return singleton;
       }
  
