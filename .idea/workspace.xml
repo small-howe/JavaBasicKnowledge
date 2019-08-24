@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaBasicKnowledge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaBasicKnowledge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/fors/forDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/fors/forDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tangwh/fors/forDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/fors/forDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tangwh/fors/forDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="329">
+              <caret line="65" column="9" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="65" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -28,9 +32,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="242">
-                <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="433">
+                <caret line="92" column="12" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -70,12 +74,18 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="341" />
-    <option name="y" value="16" />
+    <option name="x" value="340" />
+    <option name="y" value="15" />
     <option name="width" value="1250" />
     <option name="height" value="870" />
   </component>
@@ -85,8 +95,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="CatdeaLogs" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,14 +102,24 @@
               <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -124,7 +142,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.forDemo">
     <configuration name="forDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tangwh.fors.forDemo" />
       <module name="javaBasicKnowledge" />
@@ -138,9 +156,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="forDemo.bubbleSort_2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaBasicKnowledge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tangwh.fors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tangwh.fors" />
+      <option name="MAIN_CLASS_NAME" value="com.tangwh.fors.forDemo" />
+      <option name="METHOD_NAME" value="bubbleSort_2(int[])" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="forDemo.bubbleSort_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaBasicKnowledge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tangwh.fors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tangwh.fors" />
+      <option name="MAIN_CLASS_NAME" value="com.tangwh.fors.forDemo" />
+      <option name="METHOD_NAME" value="bubbleSort_2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.forDemo" />
+        <item itemvalue="JUnit.forDemo.bubbleSort_2 (1)" />
+        <item itemvalue="JUnit.forDemo.bubbleSort_2" />
       </list>
     </recent_temporary>
   </component>
@@ -156,18 +208,30 @@
       <updated>1566465201001</updated>
       <workItem from="1566465202446" duration="8562000" />
       <workItem from="1566528041758" duration="10978000" />
-      <workItem from="1566562053924" duration="7759000" />
+      <workItem from="1566562053924" duration="8104000" />
+      <workItem from="1566610772362" duration="2272000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="forDemo_bubbleSort_2 - 2019.08.24 at 10h 09m 49s.xml">
+      <configuration name="forDemo.bubbleSort_2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="forDemo_bubbleSort_2 - 2019.08.24 at 10h 10m 04s.xml">
+      <configuration name="forDemo.bubbleSort_2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="forDemo_bubbleSort_2_(1) - 2019.08.24 at 10h 12m 01s.xml">
+      <configuration name="forDemo.bubbleSort_2 (1)" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27299000" />
+    <option name="totallyTimeSpent" value="29916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07573727" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21648793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -176,24 +240,24 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7595308" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2536657" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.11730205" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.35337242" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32991204" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3297587" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
@@ -202,18 +266,25 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/builders/JUnit4Builder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/fors/forDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="329">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="65" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="242">
-            <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="433">
+            <caret line="92" column="12" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
