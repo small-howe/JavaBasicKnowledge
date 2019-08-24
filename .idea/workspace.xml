@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/abstract_Demo/Abstract_Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tangwh/abstractAndInterface_Demo/InterfaceDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tangwh/abstract_Demo/Abstract_Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/abstractAndInterface_Demo/Abstract_Demo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,11 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/tangwh/abstract_Demo/Abstract_Demo.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/abstractAndInterface_Demo/Abstract_Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="374">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/abstractAndInterface_Demo/InterfaceDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -81,6 +90,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -99,6 +109,8 @@
         <option value="$PROJECT_DIR$/src/com/tangwh/abstara_Demo/AbstaraDemo.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/abstract_Demo/AbstaraDemo.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/abstract_Demo/Abstract_Demo.java" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/abstractAndInterface_Demo/Abstract_Demo.java" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/abstractAndInterface_Demo/InterfaceDemo.java" />
       </list>
     </option>
   </component>
@@ -162,7 +174,14 @@
               <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="abstract_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="abstractAndInterface_Demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
+              <item name="class_load" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
@@ -172,8 +191,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="CatdeaLogs" />
       <pane id="Scope" />
+      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +305,8 @@
       <workItem from="1566610772362" duration="11980000" />
       <workItem from="1566630885703" duration="343000" />
       <workItem from="1566631534095" duration="668000" />
-      <workItem from="1566636115522" duration="2858000" />
+      <workItem from="1566636115522" duration="4214000" />
+      <workItem from="1566650581274" duration="1217000" />
     </task>
     <servers />
   </component>
@@ -302,7 +322,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43493000" />
+    <option name="totallyTimeSpent" value="46066000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -317,7 +337,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22453083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2272118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -334,7 +354,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.18475074" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.107038125" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32991204" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -392,10 +412,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/abstract_Demo/Abstract_Demo.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/abstractAndInterface_Demo/Abstract_Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        <state relative-caret-position="374">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/abstractAndInterface_Demo/InterfaceDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
         </state>
       </provider>
     </entry>
