@@ -5,7 +5,7 @@ package com.tangwh.arrayBoxAndLinkBox;
  * 链式结构
  *
  */
-public class LinkedBox implements Box {
+public class LinkedBox  extends AdapterMode {
 
     // 创建几个属性  记录首节点  尾节点  有效元素的个数
     private Node first; // 记录首节点
@@ -123,4 +123,6 @@ public class LinkedBox implements Box {
     public int size() {
         return size;
     }
+
+
 }

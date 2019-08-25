@@ -1,6 +1,6 @@
 package com.tangwh.arrayBoxAndLinkBox;
 
-public class ArrayBox implements Box{
+public class ArrayBox extends AdapterMode{
 
 
     // 设置静态常量 设置默认数组的长度
@@ -111,4 +111,5 @@ public class ArrayBox implements Box{
 // 旧数据返回
         return oldValue;
     }
+
 }

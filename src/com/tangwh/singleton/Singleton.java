@@ -1,5 +1,5 @@
-package com.tangwh.singleton;
 
+package com.tangwh.singleton;
 /**
  * 设计模式之 单例模式
  */
@@ -15,6 +15,8 @@ public class Singleton {
     // 构造方法
     // 块
     private static Singleton singleton = new Singleton();
+
+
 
     public static Singleton getSingleton(){
         return singleton;
