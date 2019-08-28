@@ -15,12 +15,15 @@ public class Singleton {
     // 构造方法
     // 块
     private static Singleton singleton = new Singleton();
-
+//  private static Singleton singleton; // 懒汉式加载
 
 
     public static Singleton getSingleton(){
         return singleton;
     }
 
-
+ /*  if(singleton==null){
+     singleton =  new Singleton();   懒汉式加载
+   }
+   */
 }

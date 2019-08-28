@@ -71,6 +71,5 @@ public class forDemo {
             System.out.print(i1+" ");
         }
 
-
     }
 }

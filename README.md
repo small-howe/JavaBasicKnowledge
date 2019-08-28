@@ -1,4 +1,4 @@
-## JAVA基础知识回顾
+# JAVA基础知识回顾
 
 ## 运算符 
 ```
@@ -118,38 +118,52 @@
 public class Singleton {
   //1.私有的构造方法  让无参构造变成私有 保证外面改变不可随便创建
       private Singleton(){};
-//2. 私有的静态的当前类对象作为属性
-  private static Singleton singleton = new Singleton();// 饿汉式 立即加载
+//2. 私有的静态的当前类对象作为属性 volatile强制制止指令重排
+  private volatile static  Singleton singleton = new Singleton();// 饿汉式 立即加载
  //  private static Singleton singleton; // 懒汉式加载
   // 3.公开的静态的方法返回当前对象
   public static Singleton getSingleton(){
-  /*  if(singleton==null){
-     singleton =  new Singleton();   懒汉式加载
+        if(singleton==null){
+      synchronized (this){    
+    if(singleton==null){
+     singleton =  new Singleton(); //  懒汉式加载
    }
-   */
           return singleton;
       }
- 
+      }
+ }
    //饿汉式(立即加载):对象启动时就加载  优点:不会产生 空指针异常   缺点:会给服务器带来压力
    //懒汉式(延迟加载) :需要的时候再去加载  优点:不会浪费空间             缺点: 可能会产生空指针   
    //生命周期托管式:对象加载过程交给别人 
    }
 ```
-#### 缺省适配器模式(Adapter) 子类 implements 父类 必须实现所有方法   适配器:  
+#### 缺省适配器模式(Adapter): 子类 implements 父类 必须实现所有方法   适配器:  
 ```java
 /**
- *       中间类 适配器 模式 实现接口
+ *       中间类 适配器 模式 实现接口  抽象类
  */
 public abstract class AdapterMode implements Box{
     public  void addll(){
+        // 内部抛出异常   如果子类想用该方法 必须重写 
+        throw new BoxIndexOutOfBoundsException(IsindexAction);
     }
 }
 /**
-*  继承中间类
-*/
+*  继承中间类  子类
+*/ 
 public class ArrayBox extends AdapterMode{
+    
+    public void  addlla(){
+        // 子类 重写该方法 才能使用
+        
+    }
 }
 ```
+#### 策略模式(Strategy): 解决类和类之间的关系  执行流程固定 执行的结果由于提供了不同的策略而不同
+
+
+## String 
+
 
 ## 集合
   ### 单向链表
@@ -162,7 +176,44 @@ public class ArrayBox extends AdapterMode{
  ```
  ### 环链表
 
-## 泛型
+## 包装类
+#### 学会使用包装类 (API) 
+```
+    1.类所在的包
+	2.类的关系   自己默认继承 实现
+	3.是否可以创建对象  调用    方法本身静态的
+	4.类中提供的常用方法
+
+     byte---Byte   short---Short   int---Integer  long---Long
+	float---Float  double---Double  char---Character   boolean---Boolean
+	
+	1.八个包装类都在同一个包下   java.lang包   不需要import导包直接使用
+    2.八个包装类中有六个是与数字相关  都默认继承父类Number
+    3.八个包装类都实现了Serializable, Comparable
+    4.八个包装类都有带自己对应类型参数的构造方法
+     八个包装类中有七个(除了Character)还有构造方法重载   带String类型
+     new Integer("10");
+     
+     Integer：
+     
+     1.==与equals()区别
+     ==可以比较基本数据类型  也可以比较引用数据类型  (变量中存储的内容)
+     如果比较基本类型比较是变量中存储的值
+     如果比较引用类型比较是变量中存储的地址引用
+     equals()是Object类中继承过来的方法  每一个引用类型都可以调用
+     默认继承的equals()方法比较与==一致  如果想要改变比较规则 可以重写equals方法
+     由于Integer类就重写了equals() 所以Integer比较的是数值
+     
+     ----------------------------------------------------------------------------
+     
+     2.考察Integer类加载的时候  自己有一个静态的空间
+     空间内立即加载 Integer类型的数组  内存储256个Integer对象   -128 ~ 127
+     如果我们用的对象范围在这之内Integer i1 = 10;  直接取静态区中找对应的对象
+     如果我们用的对象范围超出了这个Integer i1 = 1000;  会帮我们创建一个新的Integer对象
+     		
+```
+
+
 
 ## IO
 
@@ -171,18 +222,28 @@ public class ArrayBox extends AdapterMode{
 
 
 ## JVM
- ### 类加载顺序:
-   
+ 
+   #### 栈---> person p  = new person; <----- 堆  
 
 
-   ### 堆内存:
+
+   ### 堆内存:new创建的对象  用 Garbage Collection垃圾回收器  GC 回收
+   ```
+    new  出来的    垃圾回收器GC    对象空间没有任何引用指向视为垃圾
+   OutOfMemoryError 堆内存溢出错误
+   ```
   
    
 
-   ### 栈内存
+   ### 栈内存:存--->创建开始 用完立即回收   StackOverflowError(栈内存溢出)
+     ```
+     变量      方法执行临时空间  创建开始 用完立即回收
+     StackOverflowError 栈内存溢出错误
+     ```
+        			
     
    
    
    
-   ### 方法区
+   ### 方法区:类   常量   静态   只有一份回收不了   加载类  类模板
    
