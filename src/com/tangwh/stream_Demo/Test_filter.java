@@ -11,7 +11,7 @@ public class Test_filter {
 
     public static void main(String[] args) {
 
-        Student s1 = new Student(1, "猪八戒", 18, "浙江");
+        Student s1 = new Student(1, "李现", 18, "浙江");
         Student s2 = new Student(2, "曜", 16, "西安");
         Student s3 = new Student(3, "王一博", 17, "湖北");
         Student s4 = new Student(4, "阿波", 20, "浙江");

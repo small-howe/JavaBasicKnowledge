@@ -1,5 +1,7 @@
 package com.tangwh.stream_Demo;
 
+import java.util.Objects;
+
 public class Student {
     private Integer id;
 
@@ -52,15 +54,6 @@ public class Student {
         this.address = address;
     }
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
 
     @Override
     public String toString() {
@@ -70,5 +63,21 @@ public class Student {
                 ", age=" + age +
                 ", address='" + address + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return Objects.equals(id, student.id) &&
+                Objects.equals(name, student.name) &&
+                Objects.equals(age, student.age) &&
+                Objects.equals(address, student.address);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age, address);
     }
 }

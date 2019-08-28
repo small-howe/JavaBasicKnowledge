@@ -36,6 +36,7 @@ public class Integer_Demo {
         System.out.println(i1.equals(i2));
         System.out.println(i1.equals(i3));
         System.out.println(i3.equals(i4));
+
 //        1.==与equals()区别
 //         ==可以比较基本数据类型  也可以比较引用数据类型  (变量中存储的内容)
 //        如果比较基本类型比较是变量中存储的值

@@ -210,9 +210,11 @@ public class ArrayBox extends AdapterMode{
      空间内立即加载 Integer类型的数组  内存储256个Integer对象   -128 ~ 127
      如果我们用的对象范围在这之内Integer i1 = 10;  直接取静态区中找对应的对象
      如果我们用的对象范围超出了这个Integer i1 = 1000;  会帮我们创建一个新的Integer对象
+     
+     
      		
 ```
-
+#### 数学相关的
 
 
 ## IO
@@ -236,10 +238,10 @@ public class ArrayBox extends AdapterMode{
    
 
    ### 栈内存:存--->创建开始 用完立即回收   StackOverflowError(栈内存溢出)
-     ```
+     
      变量      方法执行临时空间  创建开始 用完立即回收
      StackOverflowError 栈内存溢出错误
-     ```
+     
         			
     
    

@@ -14,5 +14,6 @@ public class Inner_classTest {
         // 调用内部类的方法
         inner_classDemo1.testDemo1();
 
+
     }
 }
