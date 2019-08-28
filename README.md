@@ -177,7 +177,7 @@ public class ArrayBox extends AdapterMode{
  ### 环链表
 
 ## 包装类
-#### 学会使用包装类 (API) 
+#### 学会使用包装类 (API) :
 ```
     1.类所在的包
 	2.类的关系   自己默认继承 实现
@@ -214,7 +214,38 @@ public class ArrayBox extends AdapterMode{
      
      		
 ```
-#### 数学相关的
+#### 数学相关的:
+```
+Math类
+	1.所属的包java.lang
+	2.Math构造方法是私有的  我们不能直接调用创建对象
+	3.由于Math中提供的属性及方法都是static  不需要创建对象
+	4.常用的方法:
+	     abs()返回给定数字的绝对值    (参数 int long float double)
+         double = ceil()向上取整
+    	 double = floor()向下取整
+    	 double = rint()临近的整数 如果两边距离一样 则返回偶数
+    	 int = round()  四舍五入的整数
+    	 max(a,b)  min(a,b)    (参数int  long  float  double)
+    	 pow(a,b)  a的b次方  (参数double 返回值double)
+    	 sqrt(double a)  获取给定参数的平方根
+    	double = random();	  随机产生一个     [0.0--1.0)
+    5.Math.random()计算小数的时候精确程度可能有些损失
+    
+Random类
+    1.在java.util包中的类   需要import导入
+    2.没有任何继承关系  默认继承Object类
+    3.查找构造方法--->如何创建对象
+    Random r = new Random();
+    4.常用方法:
+          r.nextInt();   随机产生 int取值范围的整数 有正有负
+          r.nextInt(int bound);   随机产生一个  [0--bound)  整数  
+          注意bound必须为正数  否则会出现如下的运行时异常
+          IllegalArgumentException
+          r.nextFloat()  随机产生一个 [0.0---1.0)
+          r.nextBoolean()   随机产生一个boolean值   true  false         
+
+```
 
 
 ## IO
