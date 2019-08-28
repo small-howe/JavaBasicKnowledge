@@ -1,8 +1,21 @@
 package com.tangwh.packagingClass;
 
-import javax.sound.midi.SoundbankResource;
+import java.math.BigInteger;
 
 public class Integer_Demo {
+
+
+     // 设计一个方法 给定数字的阶乘  5 = 1*2*3*4
+     public BigInteger factorial(int num){
+     BigInteger result = new BigInteger("1");
+       for (int i=1;i<=num;i++){
+
+           result = result.multiply( new BigInteger(i+""));
+       }
+     return result;
+    }
+
+
     public static void main(String[] args) {
         // -------  1.5之前 -----------------
         //  引用数据类型 包装类
@@ -48,11 +61,10 @@ public class Integer_Demo {
 //        空间内立即加载 Integer类型的数组  内存储256个Integer对象   -128 ~ 127
 //        如果我们用的对象范围在这之内Integer i1 = 10;  直接取静态区中找对应的对象
 //        如果我们用的对象范围超出了这个Integer i1 = 1000;  会帮我们创建一个新的Integer对象
+        Integer_Demo integer_demo = new Integer_Demo();
 
-
-
-
-
+        BigInteger factorial = integer_demo.factorial(5);
+        System.out.println(factorial);
 
     }
 }

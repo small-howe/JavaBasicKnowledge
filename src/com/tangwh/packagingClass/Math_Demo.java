@@ -17,5 +17,9 @@ public class Math_Demo {
 
         int anInt = random.nextInt(10);// 0~10
         System.out.println(anInt);
+
+        //5.0~~~10.09
+        float v = (random.nextInt(6) )+ 5 + random.nextFloat();
+        System.out.println(v);
     }
 }

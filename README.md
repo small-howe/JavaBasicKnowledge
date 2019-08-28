@@ -165,7 +165,10 @@ public class ArrayBox extends AdapterMode{
 ## String 
 
 
+
 ## 集合
+ ### HashMap：
+ 
   ### 单向链表
 ``` 
    A -------> B -------> C -------> D
@@ -175,6 +178,9 @@ public class ArrayBox extends AdapterMode{
     A <-------> B <-------> C <-------> D
  ```
  ### 环链表
+ 
+ 
+ 
 
 ## 包装类
 #### 学会使用包装类 (API) :
@@ -244,6 +250,56 @@ Random类
           IllegalArgumentException
           r.nextFloat()  随机产生一个 [0.0---1.0)
           r.nextBoolean()   随机产生一个boolean值   true  false         
+
+UUID类
+    1.所属的包  java.util    需要import导入
+    2.没有任何继承关系  默认继承Object类
+    3.构造方法有  没有无参数的  我们通常不会创建对象
+    UUID uuid = UUID.randomUUID();
+    System.out.println(uuid.toString());//数据库表格主键 primary key
+    产生一个32位的随机元素 每一个位置是一个16进制的数字
+    
+    
+BigInteger类(大整数)  
+         long范围:  -2的63次方 ~ 2的63次方-1
+    1.所属的包java.math  需要import导入
+    2.继承自Number   
+    3.如何创建对象   提供的构造方法全部都是带参数的
+    	通常利用带String参数的构造方法创建这个类的对象
+    	BigInteger  bi = new BigInteger("123");	
+    4.类中的常用方法
+           做四则运算 加减乘除
+              add()   subtract()   multiply()   divide()
+    5.小例子   设计一个方法 用来计算给定数字的阶乘  5   1*2*3*4*5==120
+    		//设计一个方法  用来计算给定数字的阶乘
+    		//参数   返回值
+    		public BigInteger factorial(int num){
+    			BigInteger result = new BigInteger("1");
+    			for(int i=1;i<=num;i++){
+    				result = result.multiply(new BigInteger(i+""));
+    			}
+    			return result;
+    		}
+    
+BigDecima类    
+          超过了double取值范围
+     1.所属的包  java.math包
+     2.继承Number类
+     3.通常也是可以通过 带String参数 构建对象
+     4.类中的常用方法
+     	做四则运算  加减乘除
+     	add()   subtract()   multiply()   divide()
+        两个参数前面是保留小数点之后的位数  后面参数是设置的模式
+        对象.setScale(2,BigDecimal.ROUND_DOWN);
+        
+DecimalFormat类
+      1.所属的包 java.text
+      2.import导入才能使用
+      3.通过带String参数的构造方法创建一个格式化对象   0表示必须存在  #可有可无
+      4.调用format方法将一个小数格式化成一个字符串
+      		DecimalFormat df = new DecimalFormat("000.###");// 0 #
+              		String value = df.format(12.45);
+              		System.out.println(value);
 
 ```
 
