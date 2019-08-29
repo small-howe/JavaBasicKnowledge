@@ -1,5 +1,10 @@
 
 package com.tangwh.singleton;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * 设计模式之 单例模式
  */
@@ -26,4 +31,6 @@ public class Singleton {
      singleton =  new Singleton();   懒汉式加载
    }
    */
+ Map map = new HashMap();
+    ConcurrentHashMap coo = new ConcurrentHashMap();
 }

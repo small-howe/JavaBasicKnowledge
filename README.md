@@ -162,70 +162,6 @@ public class ArrayBox extends AdapterMode{
 #### 策略模式(Strategy): 解决类和类之间的关系  执行流程固定 执行的结果由于提供了不同的策略而不同
 
 
-## String 
-
-
-
-## 集合
- ### HashMap：
- ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
- 
- 相关面试题:
- ```
-   1. HashMap初始化桶大小？
-    32位:8  64位:16  jdk1.8:16
-    
-   2. HashMap的查找效率一定比ArrayList的查找效率高吗？
-        不
-   2. 什么情况下，查找效率没有arrayList高？
-         (1)在存储2个值以内。
-         (2)在存放的内容hash值一样时，且长度不超过8时。(超过8链表就变为红黑树了)
-         (3)在高速并发写入的同时。(高速并发写入的时候，HashMap会扩容或者将链表转为红黑树)
-         
-   3. 我要向HashMap中存1000个数，我应该初始化大小为多少?
-       1000 / 0.75 = 1333.333333  1333+    2048
-       时间换空间(1.8以前)，空间换时间(1.8)
-       
-   4. Hash的底层数据结构是什么？
-       数组加链表，邻接链表
-       
-   5. HashMap是否是线程安全的？
-      不是
-   5. 如果需要线程安全的HashMap怎么办？
-      (1) ConcurrentHashMap
-      (2) 自己封装HashMap，使用Synchronized，Lock，CAS
-      (3) 初始化容量。（能解决一大块问题，不能解决全部问题。）
-      (4) 放在ThreadLocal中。
-   
-   6. hash值，对HashMap有什么影响？
-     有Hash值，就可以直接找桶，没hash值，得现算Hash值。
-```
-```java
-
-public class StringClaaa{
-HashMap<String, Object> map1 = new HashMap<>();
-        String s = "";
-        String x = new String("abc");// 底层直接给出hash值 (1)
-        String z = new String();
-}
-```
-
-   
-   
-   
-  ### 单向链表
-``` 
-   A -------> B -------> C -------> D
-```
- ### 双向链表
- ``` 
-    A <-------> B <-------> C <-------> D
- ```
- ### 环链表
- 
- 
- 
-
 ## 包装类
 #### 学会使用包装类 (API) :
 ```
@@ -344,10 +280,118 @@ DecimalFormat类
       		DecimalFormat df = new DecimalFormat("000.###");// 0 #
               		String value = df.format(12.45);
               		System.out.println(value);
-
+System类
+	1.所属的包java.lang包 不需要导入
+	2.不需要创建对象  通过类名就可以访问
+	3.有三个属性及若干的方法
+		三个属性out   in   err
+		方法gc()  exit(0);  currentTimeMillis();当前时间毫秒
 ```
+#### 日期相关的:
+```
+Date类
+	1.通常使用的是java.util包
+	2.导包 拿来使用  构建对象
+	3.通常使用无参数的构造方法  或者带long构造方法
+	4.Date类中常用的方法
+		before();x是否在y之前  after();x是否在y之后
+		setTime()  getTime();----->long
+		compareTo();   -1  1  0 比较 时间x 和 y 那个在前？ 
+	5.可以处理一个Date日期的格式
 
 
+DateFormat抽象类  通过子类来使用(SimpleDateFormat)
+	1.包java.text 需要导包使用
+	2.此类是一个抽象类  不能创建对象   子类来使用
+	3.SimpleDateFormat类   是DateFormat的子类
+	4.调用带String参数的构造方法创建format对象
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String v = sdf.format(date1);//通过sdf对象将date1格式化成你描述的样子
+
+Calendar类   1.1版本
+    1.所属的包java.util  需要导包
+    2.有构造方法  用protected修饰的  通常访问不到   通常会调用默认的getInstance();
+    3.常用方法
+    	after()  before()
+    	setTime()  getTime()---->Date
+    	getTimeInMillis()----time
+    	getTimeZone()---TimeZone
+    	Calendar里面包含一个date属性  可以操作date的某一个局部信息
+    	set   get
+    	calendar.set(Calendar.YEAR,2015);
+           int year = calendar.get(Calendar.YEAR);
+
+TimeZone
+	1.java.util包
+	2.可以通过calendar对象.getTimeZone()获取  或   TimeZone.getDefault();
+	3.常用方法
+	   tz.getID()	   ---->    Asia/Shanghai
+        tz.getDisplayName()   中国标准时间
+```
+## 集合
+ ### HashMap：
+ ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
+ 
+ 相关面试题: 
+ 三个值: 16,  8,  0.75
+        16: 初始化的桶的长度
+         8:超过8变为红黑书(1.8版本及以上)
+      0.75: 负载因子
+     老版本:HashMap中存放的总数量达到负载因子时(桶长度 * 负载因子)，扩容一倍(1.7之前)
+     新版本:HashMap中存放的总数量，达到桶长度时，扩容负载因子倍。(1.7及1.7之后)
+ ```
+   1. HashMap初始化桶大小？
+    32位:8  64位:16  jdk1.8:16
+    
+   2. HashMap的查找效率一定比ArrayList的查找效率高吗？
+        不
+   2. 什么情况下，查找效率没有arrayList高？
+         (1)在存储2个值以内。
+         (2)在存放的内容hash值一样时，且长度不超过8时。(超过8链表就变为红黑树了)
+         (3)在高速并发写入的同时。(高速并发写入的时候，HashMap会扩容或者将链表转为红黑树)
+         
+   3. 我要向HashMap中存1000个数，我应该初始化大小为多少?
+       1000 / 0.75 = 1333.333333  1333+    2048
+       时间换空间(1.8以前)，空间换时间(1.8)
+       
+   4. Hash的底层数据结构是什么？
+       数组加链表，邻接链表
+       
+   5. HashMap是否是线程安全的？
+      不是
+   5. 如果需要线程安全的HashMap怎么办？
+      (1) ConcurrentHashMap
+      (2) 自己封装HashMap，使用Synchronized，Lock(手动锁)，CAS(原子锁)
+      (3) 初始化容量。（能解决一大块问题，不能解决全部问题。）
+      (4) 放在ThreadLocal中。
+   
+   6. hash值，对HashMap有什么影响？
+     有Hash值，就可以直接找桶，没hash值，得现算Hash值。 
+```
+```java
+
+public class StringClaaa{
+HashMap<String, Object> map1 = new HashMap<>();
+        String s = "";
+        String x = new String("abc");// 底层直接给出hash值 (1)
+        String z = new String();
+}
+```
+   
+  ### 单向链表
+``` 
+   A -------> B -------> C -------> D
+```
+ ### 双向链表
+ ``` 
+    A <-------> B <-------> C <-------> D
+ ```
+ ### 环链表
+ 
+ 
+ 
+
+## String 
 ## IO
 
 
