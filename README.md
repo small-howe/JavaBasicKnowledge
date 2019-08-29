@@ -1,6 +1,6 @@
 # JAVA基础知识回顾
 
-## 运算符 
+## I.运算符 
 ```
     按照操作数的功能来分：
        算数运算 : + ,  -,  /,  *, %(取余 || 取模),++(自增),--(自减)
@@ -56,7 +56,7 @@
                八进制:0123456789ABCDEF将4个二进制合并为一个 计算成十进制表示 0X3C                       
 ```                
 
-## for循环
+## II.for循环
 ```java
  public class forDemo{
     public void showFor(){
@@ -162,7 +162,7 @@ public class ArrayBox extends AdapterMode{
 #### 策略模式(Strategy): 解决类和类之间的关系  执行流程固定 执行的结果由于提供了不同的策略而不同
 
 
-## 包装类
+## III.包装类
 #### 学会使用包装类 (API) :
 ```
     1.类所在的包
@@ -328,7 +328,7 @@ TimeZone
 	   tz.getID()	   ---->    Asia/Shanghai
         tz.getDisplayName()   中国标准时间
 ```
-## 集合
+## IV.集合
  ### HashMap：
  ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
  
@@ -391,14 +391,14 @@ HashMap<String, Object> map1 = new HashMap<>();
  
  
 
-## String 
-## IO
+## V.String 
+## VI.IO
 
 
-## 反射
+## VII.反射
 
 
-## JVM
+## VIII.JVM
  
    #### 栈---> person p  = new person; <----- 堆  
 
