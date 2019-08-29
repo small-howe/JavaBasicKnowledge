@@ -171,6 +171,7 @@ public class ArrayBox extends AdapterMode{
  ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
  
  相关面试题:
+ ```
    1. HashMap初始化桶大小？
     32位:8  64位:16  jdk1.8:16
     
@@ -198,6 +199,7 @@ public class ArrayBox extends AdapterMode{
    
    6. hash值，对HashMap有什么影响？
      有Hash值，就可以直接找桶，没hash值，得现算Hash值。
+```
 ```java
 
 public class StringClaaa{
