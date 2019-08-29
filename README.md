@@ -168,6 +168,7 @@ public class ArrayBox extends AdapterMode{
 
 ## 集合
  ### HashMap：
+ ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
  
   ### 单向链表
 ``` 

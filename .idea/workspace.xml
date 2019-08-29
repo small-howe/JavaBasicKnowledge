@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tangwh/packagingClass/Integer_Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/packagingClass/Integer_Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tangwh/packagingClass/Math_Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/packagingClass/Math_Demo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,34 +35,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_reduce.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_min.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_anyAllNoneMatch_Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="49" />
+            <state relative-caret-position="471">
+              <caret line="32" column="49" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_distinct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,10 +74,23 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="373">
-                <caret line="297" column="50" selection-start-line="297" selection-start-column="50" selection-end-line="297" selection-end-column="50" />
+              <first_editor relative-caret-position="220">
+                <caret line="170" column="201" selection-start-line="170" selection-start-column="201" selection-end-line="170" selection-end-column="201" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+              <folding>
+                <element signature="e#1656#1657#0" expanded="true" />
+                <element signature="e#1715#1716#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tangwh/packagingClass/Math_Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
+            <state relative-caret-position="440">
               <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
@@ -104,7 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/Math.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-436">
+            <state relative-caret-position="2442">
               <caret line="137" column="24" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="24" />
             </state>
           </provider>
@@ -235,9 +247,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="CatdeaLogs" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,42 +280,14 @@
               <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="arrayBoxAndLinkBox" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="for_Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="gc_Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="inner_Class" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="packagingClass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
               <item name="singleton" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
+              <item name="stream_Demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,6 +303,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -330,7 +315,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -449,7 +434,9 @@
       <workItem from="1566871889910" duration="28000" />
       <workItem from="1566886643588" duration="5924000" />
       <workItem from="1566952314877" duration="12680000" />
-      <workItem from="1566987012849" duration="9605000" />
+      <workItem from="1566987012849" duration="9726000" />
+      <workItem from="1567038841018" duration="835000" />
+      <workItem from="1567047534728" duration="382000" />
     </task>
     <servers />
   </component>
@@ -465,7 +452,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109246000" />
+    <option name="totallyTimeSpent" value="110584000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -480,7 +467,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3254818" visible="true" weight="0.28485253" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3254818" visible="true" weight="0.29289544" />
       <window_info id="Structure" order="1" sideWeight="0.6745182" side_tool="true" weight="0.22989276" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -489,7 +476,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5031056" side_tool="true" weight="0.22989276" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18035191" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18035191" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5014663" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -497,7 +484,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.1744868" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.1686217" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32991204" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -725,41 +712,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-          <folding>
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1715#1716#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_filter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="25" selection-start-line="14" selection-start-column="7" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_distinct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="45" column="25" selection-start-line="35" selection-start-column="7" selection-end-line="45" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -773,6 +729,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/awt/event/FocusEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -796,6 +759,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_anyAllNoneMatch_Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_distinct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+          <folding>
+            <element signature="e#1656#1657#0" expanded="true" />
+            <element signature="e#1715#1716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/packagingClass/Integer_Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/packagingClass/Math_Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2442">
+          <caret line="137" column="24" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_limit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -816,49 +841,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_anyAllNoneMatch_Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="32" column="49" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-436">
-          <caret line="137" column="24" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/awt/event/FocusEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/packagingClass/Math_Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/packagingClass/Integer_Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="373">
-            <caret line="297" column="50" selection-start-line="297" selection-start-column="50" selection-end-line="297" selection-end-column="50" />
+          <first_editor relative-caret-position="220">
+            <caret line="170" column="201" selection-start-line="170" selection-start-column="201" selection-end-line="170" selection-end-column="201" />
           </first_editor>
           <second_editor />
         </state>
