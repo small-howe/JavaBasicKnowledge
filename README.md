@@ -170,6 +170,47 @@ public class ArrayBox extends AdapterMode{
  ### HashMap：
  ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
  
+ 相关面试题:
+   1. HashMap初始化桶大小？
+    32位:8  64位:16  jdk1.8:16
+    
+   2. HashMap的查找效率一定比ArrayList的查找效率高吗？
+        不
+   2. 什么情况下，查找效率没有arrayList高？
+         (1)在存储2个值以内。
+         (2)在存放的内容hash值一样时，且长度不超过8时。(超过8链表就变为红黑树了)
+         (3)在高速并发写入的同时。(高速并发写入的时候，HashMap会扩容或者将链表转为红黑树)
+         
+   3. 我要向HashMap中存1000个数，我应该初始化大小为多少?
+       1000 / 0.75 = 1333.333333  1333+    2048
+       时间换空间(1.8以前)，空间换时间(1.8)
+       
+   4. Hash的底层数据结构是什么？
+       数组加链表，邻接链表
+       
+   5. HashMap是否是线程安全的？
+      不是
+   5. 如果需要线程安全的HashMap怎么办？
+      (1) ConcurrentHashMap
+      (2) 自己封装HashMap，使用Synchronized，Lock，CAS
+      (3) 初始化容量。（能解决一大块问题，不能解决全部问题。）
+      (4) 放在ThreadLocal中。
+   
+   6. hash值，对HashMap有什么影响？
+     有Hash值，就可以直接找桶，没hash值，得现算Hash值。
+```java
+
+public class StringClaaa{
+HashMap<String, Object> map1 = new HashMap<>();
+        String s = "";
+        String x = new String("abc");// 底层直接给出hash值 (1)
+        String z = new String();
+}
+```
+
+   
+   
+   
   ### 单向链表
 ``` 
    A -------> B -------> C -------> D

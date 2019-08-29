@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -74,8 +73,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="220">
-                <caret line="170" column="201" selection-start-line="170" selection-start-column="201" selection-end-line="170" selection-end-column="201" />
+              <first_editor relative-caret-position="193">
+                <caret line="206" column="32" lean-forward="true" selection-start-line="206" selection-start-column="32" selection-end-line="206" selection-end-column="32" />
               </first_editor>
               <second_editor />
             </state>
@@ -436,7 +435,7 @@
       <workItem from="1566952314877" duration="12680000" />
       <workItem from="1566987012849" duration="9726000" />
       <workItem from="1567038841018" duration="835000" />
-      <workItem from="1567047534728" duration="382000" />
+      <workItem from="1567047534728" duration="1098000" />
     </task>
     <servers />
   </component>
@@ -452,7 +451,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110584000" />
+    <option name="totallyTimeSpent" value="111300000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,7 +466,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.3254818" visible="true" weight="0.29289544" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3254818" visible="true" weight="0.29289544" />
       <window_info id="Structure" order="1" sideWeight="0.6745182" side_tool="true" weight="0.22989276" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -484,7 +483,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.1686217" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4032258" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32991204" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -844,8 +843,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="220">
-            <caret line="170" column="201" selection-start-line="170" selection-start-column="201" selection-end-line="170" selection-end-column="201" />
+          <first_editor relative-caret-position="193">
+            <caret line="206" column="32" lean-forward="true" selection-start-line="206" selection-start-column="32" selection-end-line="206" selection-end-column="32" />
           </first_editor>
           <second_editor />
         </state>
