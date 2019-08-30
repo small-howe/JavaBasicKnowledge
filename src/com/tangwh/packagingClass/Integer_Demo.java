@@ -2,6 +2,8 @@ package com.tangwh.packagingClass;
 
 import java.math.BigInteger;
 
+import static java.util.concurrent.Executors.newWorkStealingPool;
+
 /**
  * 包装类 测试
  */
@@ -68,6 +70,8 @@ public class Integer_Demo {
 
         BigInteger factorial = integer_demo.factorial(5);
         System.out.println(factorial);
+
+
 
     }
 }

@@ -30,7 +30,12 @@ public class Test_map {
         //在地址面前加上部分信息 只获取地址输出
         List<String> addresses = students.stream().map(s -> "地址:" + s.getAddress()).collect(Collectors.toList());
 
-         //  遍历
+
+        List<List<Student>> listList = students.stream().map(student -> students).collect(Collectors.toList());
+
+        listList.forEach(s->System.out.println(s));
+
+        //  遍历
         addresses.forEach(a -> System.out.println(a));
 
 

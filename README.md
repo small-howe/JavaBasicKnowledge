@@ -37,7 +37,7 @@
            00000000 00000000 00000000 00000110
            000000000 00000000 00000000 0000011(0)
        知识补充:  十进制:0123456789
-                 二进制:01
+                 二进制:0和1组合成的
                十进制————>二进制 :  十进制数 ➗ 2 将余数倒叙排列  即为有效数 
                60十进制——>32bit个0或1来表示1  60➗ 2=30  余0  30➗ 2=15 余0  15➗ 2=7 余1 7➗ 2=3 余 1  3➗ 2=1 余1  1➗ 2=0 余1
                        余数倒叙排列为:111100   
@@ -162,8 +162,9 @@ public class ArrayBox extends AdapterMode{
 #### 策略模式(Strategy): 解决类和类之间的关系  执行流程固定 执行的结果由于提供了不同的策略而不同
 
 
-## IV.包装类:
-#### 学会使用包装类 (API) :
+## IV.工具类:
+#### 包装类 (API) :
+![](http://mawen-ufile.cn-bj.ufileos.com/f54fc21b-c9a1-40c8-b7b7-8ffef884cc30.jpg?UCloudPublicKey=TOKEN_30fe6ff0-4d19-498b-b286-69be191b1881&Signature=2ITYSLaTvMsh9qnua%2FC1wH0U4mI%3D&Expires=1882448172)
 ```
     1.类所在的包
 	2.类的关系   自己默认继承 实现
@@ -333,13 +334,15 @@ TimeZone
  ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
  
  相关面试题: 
- 三个值: 16,  8,  0.75
-        16: 初始化的桶的长度
-         8:超过8变为红黑书(1.8版本及以上)
-      0.75: 负载因子
-     老版本:HashMap中存放的总数量达到负载因子时(桶长度 * 负载因子)，扩容一倍(1.7之前)
-     新版本:HashMap中存放的总数量，达到桶长度时，扩容负载因子倍。(1.7及1.7之后)
+
  ```
+ 三个值: 16,  8,  0.75
+         16: 初始化的桶的长度
+          8:超过8变为红黑书(1.8版本及以上)
+       0.75: 负载因子
+      老版本:HashMap中存放的总数量达到负载因子时(桶长度 * 负载因子)，扩容一倍(1.7之前)
+      新版本:HashMap中存放的总数量，达到桶长度时，扩容负载因子倍。(1.7及1.7之后)
+      
    1. HashMap初始化桶大小？
     32位:8  64位:16  jdk1.8:16
     
@@ -373,7 +376,7 @@ TimeZone
 public class StringClaaa{
 HashMap<String, Object> map1 = new HashMap<>();
         String s = "";
-        String x = new String("abc");// 底层直接给出hash值 (1)
+        String x = new String("abc");// 底层直接给出hash值 (1) 省略一个方法
         String z = new String();
 }
 ```
@@ -388,17 +391,181 @@ HashMap<String, Object> map1 = new HashMap<>();
  ```
  ### 环链表
  
- 
- 
 
-## VI.String:
+## VI.字符串(String)类:    
+---->引用类型    java.lang包
+```
+1.存在哪儿?   java.lang包   
+  	没有任何继承关系  实现三个接口Serializable, CharSequence, Comparable<String>
+2.如何构建对象:
+			String str = "abc"; //直接将字符串常量赋值给str   (字符串常量池)
+			String str = new String();//无参数构造方法创建空的对象
+			String str = new String("abc");//带string参数的构造方法创建对象
+			String str = new String(byte[] )//将数组中的每一个元素转化成对应的char 组合成String
+			String str = new String(char[] )//将数组中的每一个char元素拼接成最终的String
+	        String str = new String(char[] )//将数组中的每一个char元素拼接成最终的String
+3.String的不可变特性:
+			String类中包含一个private final char[] value;
+			体现在两个地方   长度及内容
+			长度--->final修饰的数组   数组长度本身不变  final修饰数组的地址也不变
+			内容--->private修饰的属性  不能在类的外部访问
+*4.常用的方法:
+			boolean = equals(Object obj);
+				//继承自Object 重写啦  比较两个字串中的字面值是否相等
+			int = hashCode();
+				//继承自Object 重写啦  将当前字符串的每一个char元素拆开 乘以31求和
+			int = compareTo(String str);
+				//实现自Comparable接口  实现啦  按照字典(Unicode编码)索引的顺序比较
+			String = toString();
+				//继承自Object 重写啦 不再输出 类名@hashCode  字符串中的字面值
+			--------------------------------------------------------------------
+			char = charAt(int index);//"abc"   0-->a
+				//返回给定index对应位置的那个char值
+			int = codePointAt(int index);//"abc"   0-->97
+				//返回给定index对应位置的那个char所对应的code码
+			int = length();
+				//返回字符串的长度
+			String = concat(String);
+				//将给定的字符串拼接在当前字符串之后
+
+
+
+     常见的String笔试题:
+	     ==  equals方法的区别: ==可以比较基本类型  可以比较引用类型   比较基本类型比较值 比较引用类型比较地址
+		equals只能比较引用类型(方法) 默认比较地址this==obj 如果想要修改其比较规则  可以重写equals方法
+         通常重写equals方法时会伴随着重写hashCode方法
+       比如String类  比如Integer
+			*String的不可变特性
+		 		长度及内容
+			String与StringBuffer区别
+			StringBuffer与StringBuilder区别
+			String对象的存储
+				"abc"---->字符串常量池
+				new String("abc")--->堆内存
+				"a"+"b"+"c"+"d"
+			*String中常用的方法
+			
+			
+```
+
+
+
 ## VII.IO:
 
+## VIII.多线程:
+### 线程池(创建有七种方式(不需要死记硬背！！！))
+#### 注意:线程池的本质只有一个  无论哪个线程池，都是调用ThreadPoolExecutor线程池创建出来的。
+```
+  为什么不同的线程池会有不同的特性呢？
+  参数不一样。             (参数类型)    (参数)
+  public ThreadPoolExecutor( int    (1)corePoolSize ,(核心线程数)
+                             int    (2)maximumPoolSize,(最大线程数)
+                            long    (3)keepAliveTime,(保持活跃的时间L)
+                        TimeUnit    (4)unit,(时间的单位)
+          BlockingQueue<Runnable>   (5)workQueue,(等待队列数)
+                    ThreadFactory   (6)threadFactory,(创建线程的工厂)
+         RejectedExecutionHandler   (7)handler(拒绝策略)
 
-## VIII.反射:
+
+举个栗子:
+去银行办理业务:  银行平时就开3个窗口（corePoolSize:核心线程数）  今天来的人多，有人需要等待。
+              等待的人就坐在大厅里，这个大厅就是（workQueue:等待队列）。 
+              如果大厅坐满了，银行会觉得今天人太多了，我们得多开几个窗口，此时银行会开启更多窗口(注意:后面添加的窗口都是临时窗口)。
+              但是不可能大于总得窗口数（maximumPoolSize：最大线程数）。
+              ------- 
+              当银行开启了足够多得窗口之后，大厅中得人数明显开始减少了。
+              当大厅中的人都办完业务离开,2分钟之后(keepAliveTime:保持活跃的时间L, unit：时间的单位)，后开的那些窗口，觉得自己任务完成了，就会将窗口关闭。
+              当银行开启了足够多的窗口之后，大厅中的人数还在增加，并且装不下了。
+              此时银行会告知后来的人，今天可能办不完业务了（handler:拒绝策略），可以明天再来。 
+              
+              
+ 自己创建线程池 :只需要 参数:(1),(2),(3),(4)(5)
+  new ThreadPoolExecutor(
+                        50,
+                         100,
+                         120L,
+                         TimeUnit.SECONDS,
+                        (等待队列数) new LinkedBlockingQueue(1)
+                        (等待队列数) new SynchronousQueue() 
+         );    
+                     
+```  
+#### 了解了  ThreadPoolExecutor 下来再看创建线程的这几种方式                                                        
+```java
+public class threadTest{
+    
+    public static void main(String[] args){
+        int nThreads = 10;
+        int corePoolSize=nThreads;
+       /**
+       *  第一种  (Single) 单线程
+       * 参数:(1, 1, 0L, TimeUnit.MILLISECONDS,new LinkedBlockingQueue<Runnable>()))
+       * (核心线程数) (最大线程数)(保持活跃的时间L)(时间单位:m) (等待队列(Integer.MAX_VALUE)无穷大)
+       * 
+       * 缺点: 有且仅有一个线程工作  等待队列：无穷大，慢慢的一个一个来。 简单线程，就一个线程，也太少了
+       * /
+        Executors.newSingleThreadExecutor();
+        
+        
+        /**
+        * 第二种:  (Fixed)固定的 
+        参数:(nThreads, nThreads, 0L, TimeUnit.MILLISECONDS,new LinkedBlockingQueue<Runnable>())
+          (核心线程数)<--传进来的--> (最大线程数) (保持活跃的时间L)(时间单位:m)(等待队列(Integer.MAX_VALUE)无穷大)
+          
+          缺点: 和SingleThread线程池逻辑一模一样，只不过这个指定了线程数。等待队列：无穷大。
+         
+        */
+        Executors.newFixedThreadPool(nThreads);
+       
+        
+        
+        /**
+        *  (Scheduled)预定的，安排
+        *  参数:(corePoolSize, Integer.MAX_VALUE, 0, NANOSECONDS,  new DelayedWorkQueue())
+        *  传进来的--> (核心线程数) 最大线程数:无穷大  (保持活跃的时间L)(时间单位:n)等待队列 
+        * 
+        * 缺点: 就这么点线程，任务多了就得堆积
+        *      当达到核心线程数之后，就创建新的线程，可以创建无穷多个线程。
+        *     新开出来的线程，只要完成了，就销毁。
+        *  
+        */
+        Executors.newScheduledThreadPool(corePoolSize);
+        
+        
+        
+        /**
+        * 
+        * (Cached)缓存（不适用与任务间隔比较长（超过一分钟）的清空）
+        *参数:(0, Integer.MAX_VALUE,60L, TimeUnit.SECONDS,new SynchronousQueue<Runnable>())
+        * 
+        * 
+        * 缺点:默认 没有核心线程数，都是临时工，没有正式员工。
+        *  任务堆积很多的时候，当有线程完成任务时，居然不复用，居然得先销毁再创建
+        *  来了任务就干，干完等一会儿，要是还有活儿就继续干，要是等了一分钟还没有活，就不干了（销毁）
+        */
+        
+        Executors.newCachedThreadPool();
+        
+        
+        // jdk  8这是一个经常被人忽略的线程池，Java 8 才加入这个创建方法，其内部会构建ForkJoinPool，利用Work-Stealing算法，并行地处理任务，不保证处理顺序
+         Executors.newWorkStealingPool();// 不建议使用的，容易引起雪崩效应。适合非常消耗CPU的性能，且非常耗时的操作。如果是任务独享机器，并且很耗费性能，很耗时。
+        
+        
+        
+    }
+    
+    }
+    
+    
+    
+
+```
+
+## IX.反射:
 
 
-## IX.JVM:
+
+## Ⅹ.JVM:
  
    #### 栈---> person p  = new person; <----- 堆  
 
