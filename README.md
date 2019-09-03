@@ -330,7 +330,8 @@ TimeZone
         tz.getDisplayName()   中国标准时间
 ```
 ## V.集合:
- ### HashMap：
+ #### HashMap：
+ ### [HashMap 相关](https://mp.weixin.qq.com/s/AnbkXhWttllCnLC3wLnAhA)    
  ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
  
  相关面试题: 
@@ -359,6 +360,12 @@ TimeZone
        
    4. Hash的底层数据结构是什么？
        数组加链表，邻接链表
+       数组是用来确定桶的位置 利用元素key 的hash值对数组长度取模(%)得到
+       链表是用来解决hash冲突问题,当出现hash 值一样的情形 就在数组上对应的位置上形成一条链表
+       
+       ps:这里的hash值并不是指向hashcode 而是讲hashcode高低十六位异或过的 
+   5.hash冲突你还知道哪些解决方法?
+   比较出名的四种:1.开放定址法 2.链地址法 3.再哈希法 4.公共溢出区域法
        
    5. HashMap是否是线程安全的？
       不是
@@ -380,7 +387,7 @@ HashMap<String, Object> map1 = new HashMap<>();
         String z = new String();
 }
 ```
-   
+  
   ### 单向链表
 ``` 
    A -------> B -------> C -------> D
@@ -393,7 +400,9 @@ HashMap<String, Object> map1 = new HashMap<>();
  
 
 ## VI.字符串(String)类:    
----->引用类型    java.lang包
+---->引用类型    java.lang包  
+注意: 注意:  区别数组length是属性  String的length()方法    集合size()方法
+### String:
 ```
 1.存在哪儿?   java.lang包   
   	没有任何继承关系  实现三个接口Serializable, CharSequence, Comparable<String>
@@ -410,24 +419,69 @@ HashMap<String, Object> map1 = new HashMap<>();
 			长度--->final修饰的数组   数组长度本身不变  final修饰数组的地址也不变
 			内容--->private修饰的属性  不能在类的外部访问
 *4.常用的方法:
-			boolean = equals(Object obj);
-				//继承自Object 重写啦  比较两个字串中的字面值是否相等
-			int = hashCode();
-				//继承自Object 重写啦  将当前字符串的每一个char元素拆开 乘以31求和
-			int = compareTo(String str);
-				//实现自Comparable接口  实现啦  按照字典(Unicode编码)索引的顺序比较
-			String = toString();
-				//继承自Object 重写啦 不再输出 类名@hashCode  字符串中的字面值
+		1.	boolean = equals(Object obj);
+				继承自Object 重写啦  比较两个字串中的字面值是否相等
+		2.	int = hashCode();
+				继承自Object 重写啦  将当前字符串的每一个char元素拆开 乘以31求和
+		3.	int = compareTo(String str);
+				实现自Comparable接口  实现啦  按照字典(Unicode编码)索引的顺序比较
+               实现自Comparable接口  实现方法   结果按照字典排布(unicode编码)顺序
+                按照两个字符串的长度较小的那个(次数)来进行循环
+               若每次的字符不一致 则直接返回code之差 
+               若比较之后都一致  则直接返回长度之差
+                compareToIgnoreCase();
+		4.	String = toString();
+				继承自Object 重写啦 不再输出 类名@hashCode  字符串中的字面值
+               没有重写过的toString从Object类中继承过来的
+               类名@hashCode(16进制形式)
+               String类重写啦  返回的是String对象的字面值
 			--------------------------------------------------------------------
-			char = charAt(int index);//"abc"   0-->a
-				//返回给定index对应位置的那个char值
-			int = codePointAt(int index);//"abc"   0-->97
-				//返回给定index对应位置的那个char所对应的code码
-			int = length();
-				//返回字符串的长度
-			String = concat(String);
-				//将给定的字符串拼接在当前字符串之后
-
+		5.	char = charAt(int index);//"abc"   0-->a
+				  返回给定index位置对应的字符
+    	5.1	int = codePointAt(int index);//"abc"   0-->97
+				返回给定index对应位置的那个char所对应的code码
+		6.	int = length();
+				返回字符串的长度
+             返回字符串的长度   (其实就是底层char[] value属性的长度)
+              注意:  区别数组length是属性  String的length()方法    集合size()方法
+		7.	String = concat(String);
+           将给定的str拼接在当前String对象的后面
+               注意:方法执行完毕需要接受返回值   String的不可变特性
+                concat方法与   +拼接的性能问题
+                开发中若遇到频繁的拼接字符串--->通常使用StringBuilder/StringBuffer
+        8.boolean = contains(CharSequence s);
+         		   判断给定的s是否在字符串中存在
+        9. startsWith(String prefix);
+         		    endsWith(String suffix);
+               判断此字符串是否已xx开头/结尾
+        10.byte[] = getBytes();   --->    getBytes(String charsetName);
+         		     char[] = toCharArray();
+         		   将当前的字符串转化成数组   "我爱你中国"   char[]  '我' '爱' '你' '中' '国'
+        11. int index = indexOf(int/String str [,int fromIndex] );   四个方法重载
+           找寻给定的元素在字符串中第一次出现的索引位置   若字符串不存在则返回-1
+              lastIndexOf(int/String str , [int fromIndex]);
+           找寻给定的元素在字符串中最后一次出现的索引位置  若不存在则返回-1
+        12.boolean = isEmpty();
+           判断当前字符串是否为空字符串  (length是否为0)
+           注意： 与null之间的区别  
+        13.replace();
+             replaceAll();
+             replaceFirst(); 换第一次出现的那个字串
+           将给定的字符串替换成另外的字符串
+        14.String[] = split(String regex [,int limit限度界限]);
+           按照给定的表达式将原来的字符串拆分开的
+        15.String = substring(int beginIndex [,int endIndex]);
+           将当前的字符串截取一部分   
+           从beginIndex开始至endIndex结束  [beginIndex,endIndex)
+           若endIndex不写 则默认到字符串最后
+        16.String = toUpperCase();
+             String = toLowerCase();
+          将全部字符串转换成大写/小写
+        17.String = trim();
+          去掉字符串前后多余的空格
+        18.boolean = matches(String regex)
+          regular有规律的 expression表达式
+          正则表达式
 
 
      常见的String笔试题:
@@ -447,9 +501,131 @@ HashMap<String, Object> map1 = new HashMap<>();
 			
 			
 ```
+### StringBuffer & StringBuilder:
+```
+StringBuffer
+StringBuilder
+1.所属的包  java.lang包
+	2.继承AbstractStringBuilder 间接继承 Object  
+		实现接口Serializable,CharSequence,Appendable
+		StringBuffer/StringBuilder没有compareTo方法
+		StringBuffer/StringBuilder含有一个String没有的方法 append();拼接
+	3.特性
+		可变字符串   char[] value;  动态扩容
+	4.对象的构建
+		无参数构造方法  构建一个默认长度16个空间的对象  char[]
+		StringBuilder builder = new StringBuilder();
+		利用给定的参数 构建一个自定义长度空间的对象 char[]
+		StringBuilder builder = new StringBuilder(20);
+		利用带String参数的构造方法  默认数组长度字符串长度+16个
+		StringBuilder builder = new StringBuilder("abc");
+    5.StringBuilder中常用的方法
+        最主要的方法 append()  频繁的拼接字符串的时候使用此方法 提高性能
+        ensureCapacity(int minimumCapacity)  确保底层数组容量够用
+        capacity();//字符串底层char[]的容量
+        length();//字符串有效元素个数(长度)
+        setLength();//设置字符串的有效元素个数
+        char = charAt(int index);
+        int = codePointAt(int index);
+        String = substring(int start [,int end]);
+            注意需要接受返回值 看见截取出来的新字符串效果
+        StringBuilder = delete(int start [,int end]);
+            StringBuilder类中独有的方法String类没有
+            将start到end之间的字符串删掉  不用接受返回值就看到效果啦
+        StringBuilder = deleteCharAt(int index);
+            String类中没有的方法
+            将给定index位置的某一个字符删除掉啦
+        int = indexOf(String str [,int fromIndex]);
+        int = lastIndexOf(String str [,int fromIndex])
+            找寻给定的str在字符串中第一次出现的索引位置  带重载 则从某一个位置开始找
+        insert(int index,value);
+            将给定的value插入在index位置之上
+        replace(int start,int end,String str);
+            将start和end之间的部分替换成str
+            builder.replace(2,5,"zzt");
+        setCharAt(int index,char value);
+            将index位置的字符改成给定的value
+        toString()
+            将StringBuilder对象 构建成一个string对象 返回
+        trimToSize()
+    	将数组中无用的容量去掉  变成length长度的数组
+    	
+    	
+--------------------------------------------------------------------------------------------------------------
+知识总结
+	1.StringBuilder类不一定需要   是为了避免String频繁拼接修改字符串信息的时候才用的
+		底层数组是可变的  提高了性能
+	2.常用方法
+		与String类不同的独有方法:
+		append()  insert()  delete()  deleteCharAt()  reverse()
+		与String类相同的方法:
+		length() charAt() codePointAt() indexOf() lastIndexOf() 
+		substring() replace()名字相同 用法不一致
+		不是很常用的方法:
+		ensureCapacity() capacity() setLength() trimToSize(); setCharAt();
+	3.String家族笔试中经常容易考察的知识点
+		1.String所属的包 继承关系 实现接口
+			java.lang 继承Object 接口Serializable,CharSequence,Comparable
+		2.String构建方式
+			常量  构造方法  
+		3.String对象内存结构
+			字符串常量区  new堆内存对象
+			==  equals()区别
+			"a"+"b"+"c"
+		4.String不可变特性
+			长度及内容
+		5.String中的常用方法---与StringBuilder的区别
+			concat();  toUpperCase();
+		6.String和StringBuilder区别   |   String和StringBuffer区别
+			String不可变字符串
+				JDK1.0
+				有一个接口Comparable
+				不可变体现在长度及内容
+				有一些方法StringBuilder没有 concat  compareTo  toUpperCase
+			StringBuilder可变字符串
+				JDK1.5
+				有一个接口Appendable
+				可变字符串  没有final修饰  底层可以进行数组扩容
+				有一些方法String没有  append() insert() delete() reverse()
+		7.StringBuffer和StringBuilder的不同
+			StringBuffer早期版本1.0
+			StringBuilder后来的版本1.5
+			早期版本  线程同步   	  安全性比较高  执行效率相对较低
+			后期版本  线程非同步    安全性比较低  执行效率相对较高
 
+```
+### 正则表达式(Regular Expression):
+```
+正则表达式regex
+		一个带有一定规律的表达式
+		匹配字符串格式的
+	正则表达式通常的作用如下:
+	1.字符串的格式校验		String类中提供的一个方法 boolean = str.matches("regex");
+	2.字符串的拆分及替换		String类中提供的方法replace  split
+	3.字符串的查找		Pattern模式  Matcher匹配器
+	如下的所有都用来描述字符的信息
+    		[abc]	abc其中的一个
+    		[^abc]	不能是abc其中的一个 其他都可以
+    		[a-zA-Z]	表示必须是这两个范围内的
+    		[a-z&&[^bc]]  表示a-z其中的一个但不能是b和c
+    		|	或者
+    		. 代表任意一个字符
+    		\d  digit数字   [0-9]
+    		\D  非数字       [^0-9]
+    		\s  space留白  一个空格 一个回车 一个换行。。。
+    		\S  非留白
+    		\w  word单词  [0-9A-Za-z]  数字或字母都可以
+    		\W 非单词        [^0-9A-Za-z]
+    
+    		如下的所有都用来描述字符出现的次数
+    		?   0-1次    [0-9]?
+    		*   0-n次
+    		+  1-n次
+    		{n} 固定n次
+    		{n,} 至少出现n次
+    		{m,n}  m-n次
 
-
+```
 ## VII.IO:
 
 ## VIII.多线程:
@@ -468,7 +644,7 @@ HashMap<String, Object> map1 = new HashMap<>();
 
 
 举个栗子:
-去银行办理业务:  银行平时就开3个窗口（corePoolSize:核心线程数）  今天来的人多，有人需要等待。
+去银行办理业务: 银行平时就开3个窗口（corePoolSize:核心线程数）  今天来的人多，有人需要等待。
               等待的人就坐在大厅里，这个大厅就是（workQueue:等待队列）。 
               如果大厅坐满了，银行会觉得今天人太多了，我们得多开几个窗口，此时银行会开启更多窗口(注意:后面添加的窗口都是临时窗口)。
               但是不可能大于总得窗口数（maximumPoolSize：最大线程数）。
@@ -549,16 +725,8 @@ public class threadTest{
         
         // jdk  8这是一个经常被人忽略的线程池，Java 8 才加入这个创建方法，其内部会构建ForkJoinPool，利用Work-Stealing算法，并行地处理任务，不保证处理顺序
          Executors.newWorkStealingPool();// 不建议使用的，容易引起雪崩效应。适合非常消耗CPU的性能，且非常耗时的操作。如果是任务独享机器，并且很耗费性能，很耗时。
-        
-        
-        
     }
-    
     }
-    
-    
-    
-
 ```
 
 ## IX.反射:

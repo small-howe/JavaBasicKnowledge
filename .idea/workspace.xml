@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/String_Demo/String_Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/thread_Demo/Test_ThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tangwh/String_Demo/Regular_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tangwh/String_Demo/StringBuilder_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/packagingClass/Integer_Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/packagingClass/Integer_Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/stream_Demo/Test_map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/stream_Demo/Test_map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tangwh/packagingClass/Integer_Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/packagingClass/Integer_Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/String_Demo/String_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/String_Demo/String_Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tangwh/String_Demo/String_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/String_Demo/String_Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,12 +38,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/String_Demo/String_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="105" column="15" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+              <folding>
+                <marker date="1567482966883" expanded="true" signature="341:466" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="408">
-                <caret line="490" column="21" selection-start-line="490" selection-start-column="21" selection-end-line="490" selection-end-column="21" />
+              <first_editor relative-caret-position="196">
+                <caret line="522" column="9" selection-start-line="522" selection-start-column="9" selection-end-line="526" selection-end-column="34" />
               </first_editor>
               <second_editor />
             </state>
@@ -53,55 +72,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/String_Demo/Regular_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/String_Demo/StringBuilder_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/Test_ThreadPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state>
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="74" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javaBasicKnowledge.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/ExecutorService.java">
+        <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/StringBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-751">
-              <caret line="209" column="24" lean-forward="true" selection-start-line="209" selection-start-column="12" selection-end-line="209" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/Executors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="284" column="36" lean-forward="true" selection-start-line="284" selection-start-column="36" selection-end-line="284" selection-end-column="36" />
+            <state>
+              <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
               <folding>
-                <element signature="e#29802#29803#0" expanded="true" />
-                <element signature="e#29841#29842#0" expanded="true" />
+                <element signature="e#2896#2897#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/BlockingQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1301">
-              <caret line="179" column="17" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/AbstractQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2093">
-              <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -168,10 +172,13 @@
         <option value="$PROJECT_DIR$/src/com/tangwh/packagingClass/Math_Demo.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/packagingClass/PackagingClass_Demo.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/packagingClass/Integer_Demo.java" />
-        <option value="$PROJECT_DIR$/src/com/tangwh/String_Demo/String_Test.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_map.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/Test_ThreadPool.java" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/String_Demo/StringBuilder.java" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/String_Demo/StringBuilder_Test.java" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/String_Demo/String_Test.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/String_Demo/Regular_Test.java" />
       </list>
     </option>
   </component>
@@ -198,10 +205,10 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="611" />
+    <option name="x" value="610" />
     <option name="y" value="30" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -211,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -231,73 +237,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tangwh" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="abstractAndInterface_Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="class_load" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="for_Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="gc_Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="inner_Class" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="packagingClass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="singleton" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="stream_Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="thread_Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="CatdeaLogs" />
     </panes>
   </component>
@@ -321,7 +265,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -340,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test_map">
+  <component name="RunManager" selected="Application.Regular_Test">
     <configuration name="Integer_Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tangwh.packagingClass.Integer_Demo" />
       <module name="javaBasicKnowledge" />
@@ -354,12 +298,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PackagingClass_Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tangwh.packagingClass.PackagingClass_Demo" />
+    <configuration name="Regular_Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangwh.String_Demo.Regular_Test" />
       <module name="javaBasicKnowledge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tangwh.packagingClass.*" />
+          <option name="PATTERN" value="com.tangwh.String_Demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringBuilder_Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangwh.String_Demo.StringBuilder_Test" />
+      <module name="javaBasicKnowledge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tangwh.String_Demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -373,19 +330,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tangwh.String_Demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_anyAllNoneMatch_Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tangwh.stream_Demo.Test_anyAllNoneMatch_Demo" />
-      <module name="javaBasicKnowledge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tangwh.stream_Demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -408,11 +352,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test_map" />
+        <item itemvalue="Application.Regular_Test" />
+        <item itemvalue="Application.StringBuilder_Test" />
         <item itemvalue="Application.String_Test" />
+        <item itemvalue="Application.Test_map" />
         <item itemvalue="Application.Integer_Demo" />
-        <item itemvalue="Application.PackagingClass_Demo" />
-        <item itemvalue="Application.Test_anyAllNoneMatch_Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -449,7 +393,17 @@
       <workItem from="1567038841018" duration="835000" />
       <workItem from="1567047534728" duration="3470000" />
       <workItem from="1567071519178" duration="11001000" />
-      <workItem from="1567132854772" duration="5552000" />
+      <workItem from="1567132854772" duration="8512000" />
+      <workItem from="1567388613300" duration="17075000" />
+      <workItem from="1567471567465" duration="17000" />
+      <workItem from="1567479031429" duration="1871000" />
+      <workItem from="1567481346934" duration="3864000" />
+      <workItem from="1567485247971" duration="6000" />
+      <workItem from="1567492313809" duration="470000" />
+      <workItem from="1567492806277" duration="538000" />
+      <workItem from="1567493465015" duration="340000" />
+      <workItem from="1567493825756" duration="272000" />
+      <workItem from="1567494125338" duration="284000" />
     </task>
     <servers />
   </component>
@@ -465,7 +419,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130225000" />
+    <option name="totallyTimeSpent" value="157922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -480,7 +434,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.32197616" visible="true" weight="0.17493297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.32197616" visible="true" weight="0.25670242" />
       <window_info id="Structure" order="1" sideWeight="0.6780239" side_tool="true" weight="0.22654155" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -489,7 +443,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5031056" side_tool="true" weight="0.22989276" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17302053" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18328446" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5014663" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -497,9 +451,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2521994" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3372434" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32991204" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -519,48 +474,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/arrayBoxAndLinkBox/AdapterMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="1" selection-start-line="2" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/arrayBoxAndLinkBox/Testlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/singleton/TestSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/arrayBoxAndLinkBox/ArrayBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -656,16 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_min.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -812,20 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/String_Demo/String_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/inner_Class/Inner_classDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -864,17 +753,6 @@
     <entry file="file://$PROJECT_DIR$/javaBasicKnowledge.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/LinkedBlockingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="249" column="30" lean-forward="true" selection-start-line="249" selection-start-column="13" selection-end-line="249" selection-end-column="30" />
-          <folding>
-            <element signature="e#7388#7389#0" expanded="true" />
-            <element signature="e#7427#7428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/BlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1301">
@@ -903,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/Test_ThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -917,10 +788,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="1202" column="32" selection-start-line="1202" selection-start-column="32" selection-end-line="1202" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1031">
+          <caret line="122" column="6" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_min.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/LinkedBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="249" column="31" selection-start-line="249" selection-start-column="13" selection-end-line="249" selection-end-column="31" />
+          <folding>
+            <element signature="e#7388#7389#0" expanded="true" />
+            <element signature="e#7427#7428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/Executors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="284" column="36" lean-forward="true" selection-start-line="284" selection-start-column="36" selection-end-line="284" selection-end-column="36" />
+        <state relative-caret-position="207">
+          <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
           <folding>
             <element signature="e#29802#29803#0" expanded="true" />
             <element signature="e#29841#29842#0" expanded="true" />
@@ -928,11 +834,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/String_Demo/StringBuilder_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/Test_ThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="74" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+          <folding>
+            <element signature="e#2896#2897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/String_Demo/Regular_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/String_Demo/String_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="105" column="15" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
+          <folding>
+            <marker date="1567482966883" expanded="true" signature="341:466" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="408">
-            <caret line="490" column="21" selection-start-line="490" selection-start-column="21" selection-end-line="490" selection-end-column="21" />
+          <first_editor relative-caret-position="196">
+            <caret line="522" column="9" selection-start-line="522" selection-start-column="9" selection-end-line="526" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>
