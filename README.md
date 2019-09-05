@@ -330,12 +330,32 @@ TimeZone
         tz.getDisplayName()   中国标准时间
 ```
 ## V.集合:
- #### HashMap：
+```
+变量---容器
+		存储一个元素
+	数组---容器
+	一组具有某种特性的数据存放在一起
+		存储一组元素(数据类型一致)	长度固定
+	集合---容器  与数组类似  集合的长度存储之后还能改变
+	集合是用来存储一组元素
+	                               集合java.util
+	            Collection(值 value)			         Map(key - value)      
+	            存储的都是value			               存储的是以key-value形式存在(key无需无重复 value无需可重复)
+         •List(有序可重复)	  •	Set( 无序无重复)           • HashMap      • TreeMa    • ConcurrentHashMap    • Hashtable
+           o ArrayList            o	HashSet                  o LinkedHashMap
+           o LinkedList           o	LinkedHashSet
+           o Vector               o	TreeSet
+           o Stack
+                序 : 顺序	添加进去的元素  取得元素的顺序一致   注意指的不是集合自己的顺序
+                	重复：两个对象元素一致               	
+```
+### List、Set、Map 之间的区别：
+![](http://mawen-ufile.cn-bj.ufileos.com/a0f1ed7a-ed37-4b01-b8f1-c55e5e4a8a65.png?UCloudPublicKey=TOKEN_30fe6ff0-4d19-498b-b286-69be191b1881&Signature=rJLUBU8Qw%2B7x37Ifa8du%2FSb%2Ba3E%3D&Expires=1882923800)
+ ### HashMap：
  ### [HashMap 相关](https://mp.weixin.qq.com/s/AnbkXhWttllCnLC3wLnAhA)    
  ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
- 
- 相关面试题: 
 
+ 相关面试题: 
  ```
  三个值: 16,  8,  0.75
          16: 初始化的桶的长度
@@ -387,18 +407,6 @@ HashMap<String, Object> map1 = new HashMap<>();
         String z = new String();
 }
 ```
-  
-  ### 单向链表
-``` 
-   A -------> B -------> C -------> D
-```
- ### 双向链表
- ``` 
-    A <-------> B <-------> C <-------> D
- ```
- ### 环链表
- 
-
 ## VI.字符串(String)类:    
 ---->引用类型    java.lang包  
 注意: 注意:  区别数组length是属性  String的length()方法    集合size()方法
@@ -475,7 +483,7 @@ HashMap<String, Object> map1 = new HashMap<>();
            从beginIndex开始至endIndex结束  [beginIndex,endIndex)
            若endIndex不写 则默认到字符串最后
         16.String = toUpperCase();
-             String = toLowerCase();
+           String = toLowerCase();
           将全部字符串转换成大写/小写
         17.String = trim();
           去掉字符串前后多余的空格
@@ -498,8 +506,7 @@ HashMap<String, Object> map1 = new HashMap<>();
 				new String("abc")--->堆内存
 				"a"+"b"+"c"+"d"
 			*String中常用的方法
-			
-			
+**~~_``_~~**	
 ```
 ### StringBuffer & StringBuilder:
 ```
@@ -626,9 +633,80 @@ StringBuilder
     		{m,n}  m-n次
 
 ```
-## VII.IO:
+## VII.I/O:
+```
+输入/输出	   流(数据流动)
+数据流动的方向   读数据(输入Input)   写数据(输出output)
+文件流  字符流  对象流  网络流....
+File类中的常用的方法:
+文件是否:  读          写            隐藏         文件       目录        
+           canRead()   canWrite()   isHidden()   isFile()   isDirectory()
+		   length()获取文件中字节的个数
+		   lastModified()获取文件最后的修改时间--->毫秒值
+		   *String path = getAbsolutePath()  获取文件的绝对路径   D://test//Test.txt
+		    String name = getName() 获取文件的名字    Test.txt
+		    
+			绝对路径<---->相对路径
+			绝对路径可以通过完整的字符串  定位盘符 文件夹 文件
+			相对路径没有盘符的写法           当前工程(项目)所在的位置找寻
+			
+		
+       	   *boolean = createNewFile()  创建新的文件
+       	   *boolean = mkdir	              创建新的文件夹  外层没有 不能创建
+       	   *boolean = mkdirs              创建新的文件夹  外层没有 可以自动创建
+       	   String pname = getParent()     获取当前file的父亲file名字
+       	   *File file = getParentFile()      获取当前file的父亲file对象
+       	   String[] names = list()            获取当前file的所有儿子名字
+       	   *File[] files = listFiles()             获取当前file的所有儿子对象
+       	   *boolean = delete()	删除文件或空的文件夹  不能删除带元素的文件夹	
+--------------------------------------------------------------------------------------------------------------
+ 操作文件内容 :
+ 流按照方向(功能)来区分
+ 		in(读取)	out(写入)
+ 	操作的目标来区分
+ 		文件流  数组流  字符串流  数据流  对象流  网络流。。。。
+		字节型文件流(1字节)
+			FileInputStream/FileOutputStream
+		字符型文件流(2字节--1字符)
+			        FileReader/FileWriter		
+ 字节型文件输入流:
+ 		FileInputStream
+ 		1.包   java.io
+ 		2.了解一下继承关系    InputStream类  字节型输入流的父类
+ 		3.创建对象
+ 			调用一个带File类型的构造方法
+ 			调用一个带String类型的构造方法
+ 		4.常用方法
+ 			int code = read();	每次从流管道中读取一个字节   返回字节的code码
+ 			*int count = read(byte[] )  每次从流管道中读取若干个字节  存入数组内  返回有效元素个数
+ 			int count = available();   返回流管道中还有多少缓存的字节数
+ 			skip(long n)   跳过几个字节  读取
+ 				多线程--->利用几个线程同时读取文件
+ 				10000字节    5个小人同时读取
+ 				1-2000   2001-4000   4001-6000   6001-8000   8001-10000
+ 				D当做服务器    E当做客户端
+ 			*close()	将流管道关闭---必须要做  最好放在finally里  注意代码的健壮性  判断严谨
+ 	字节型文件输出流:
+ 		FileOutputStream	将数据写入文件中
+ 		1. java.io
+ 		2.继承OutputStream  所有字节型输出流的父类
+ 		3.创建对象
+ 			调用一个带File参数   还有File boolean重载
+ 			调用一个带String参数   还有String boolean重载
+ 		4.常用方法
+ 			write(int code);  将给定code对应的字符写入文件   '='
+ 			write(byte[])    将数组中的全部字节写入文件   getByte()
+ 			flush();	将管道内的字节推入(刷新)文件
+ 			close();	注意在finally中关闭
+
+ 
+```
 
 ## VIII.多线程:
+
+
+
+
 ### 线程池(创建有七种方式(不需要死记硬背！！！))
 #### 注意:线程池的本质只有一个  无论哪个线程池，都是调用ThreadPoolExecutor线程池创建出来的。
 ```
@@ -657,17 +735,17 @@ StringBuilder
               
  自己创建线程池 :只需要 参数:(1),(2),(3),(4)(5)
   new ThreadPoolExecutor(
-                        50,
+                         50,
                          100,
                          120L,
                          TimeUnit.SECONDS,
                         (等待队列数) new LinkedBlockingQueue(1)
                         (等待队列数) new SynchronousQueue() 
-         );    
-                     
+    );                     
 ```  
 #### 了解了  ThreadPoolExecutor 下来再看创建线程的这几种方式                                                        
-```java
+```
+java
 public class threadTest{
     
     public static void main(String[] args){
@@ -728,13 +806,98 @@ public class threadTest{
     }
     }
 ```
-
 ## IX.反射:
 
-
-
-## Ⅹ.JVM:
- 
+## Ⅹ异常(错误):
+```
+        Throwable类实现了一个序列化接口
+    Error(错误)	     		   Exception(异常)
+    StackOverflowError	    	RuntimeException(运行时)   IOException。。。。。
+    OutOfMemoryError
+    
+    异常:
+    异常的分支体系：
+    	运行时异常(非检查异常)：
+    		Error和RuntimeException都算作运行时异常
+    		javac编译的时候，不会提示和发现的，
+    		在程序编写时不要求必须做处理，如果我们愿意可以添加处理手段(try throws)
+    		要求大家出现这样异常的时候 知道怎么产生及如何修改
+    		1.InputMisMatchException 输入不匹配
+    			int value = input.nextInt();//   abc
+    		*2.NumberFormatException 数字格式化
+    			int value = Integer.parseInt("123.45");
+    		3.NegativeArraySizeException 数组长度负数
+    			int[] array = new int[-2];
+    		*4.ArrayIndexOutOfBoundsException 数组索引越界
+    			int[] array = {1,2,3};
+    			array[5];
+    		*5.NullPointerException 空指针异常
+    			int[][] array = new int[3][];
+    			array[0][0] =10;
+    			Person p = null;
+    			p.getName();
+    		6.ArithmeticException 数字异常
+    			10/0	整数不允许除以0	Infinity小数除以0会产生无穷
+    		*7.ClassCastException 造型异常
+    			Person p = new Teacher();
+    			Student s = (Student)p;
+    		*8.StringIndexOutOfBoundsException 字符串越界
+    			String str = "abc";
+    			str.charAt(5);
+    		*9.IndexOutOfBoundsException 集合越界
+    			List家族
+    			ArrayList  list = new ArrayList();
+    			list.add(); list.add(); list.add();
+    			list.get(5);
+    		10.IllegalArgumentException 非法参数异常
+    			ArrayList  list = new ArrayList(-1);
+    	编译时异常(检查异常):
+    		除了Error和RuntimeException以外其他的异常
+    		javac编译的时候  强制要求我们必须为这样的异常做处理(try或throws)
+    		因为这样的异常在程序运行过程中极有可能产生问题的
+    		异常产生后后续的所有执行就停止啦
+    		1.InterruptException
+    			try{
+    				Thread.sleep(5000);
+    			}catch(Exception e){
+    			}
+   ---------------------------------------------------------------------------------------
+   try{ 
+   。。代码省略。。。。
+   }catch(代码省略){
+    。。。代码省略。。。
+    }
+    [finally{
+     。。代码省略。。
+     } ]
+   	1.try不能单独的出现
+   	2.后面必须添加catch或finally
+   	3.catch有一组括号 (NullPointerException) 目的是为了捕获某一种异常
+   	4.catch可以有很多个存在
+   		捕获的异常之间没有任何的继承关系
+   		捕获的异常需要从小到大进行捕获
+   	5.finally不是必须存在的
+   		若存在finally结构  则必须执行
+   		引申一个小问题:   final   finally  finalize区别
+   			final  特征修饰符  修饰变量 属性 方法 类
+   				修饰变量 基本类型 值不能改变 引用类型 地址不能改变(如果变量没有初值 给一次机会赋值)
+   				修饰属性 特点与修饰变量类似 (要求必须给属性赋初始值 否则编译报错)
+   				修饰方法 不能被子类重写
+   				修饰类    不能被其他的子类继承
+   			finally 处理异常手段的一部分
+   				try{}catch(){}后面的一个部分
+   				这个部分可有可无  如果有只能含有一份 且必须执行
+   			finalize 是Object类中的一个protected方法
+   				对象没有任何引用指向的时候 -- 会被GC回收
+   				当对象回收的时候 默认调用finalize方法
+   				若想要看到对象回收的效果  可以重写 public void finalize(){}
+   	6.处理异常放在方法内部 可能还会有小问题
+   		如果在方法内部含有返回值
+   		不管返回值return关键字在哪里   finally一定会执行完毕
+   		返回值的具体结果   看情况 	
+```
+## Ⅺ.JVM:
+ ![](http://mawen-ufile.cn-bj.ufileos.com/82aa16d0-655f-43c2-a9fc-4ff5115026a8.png?UCloudPublicKey=TOKEN_30fe6ff0-4d19-498b-b286-69be191b1881&Signature=GQuSCe9BmE3HRb5DZPWUxDxk2G8%3D&Expires=1883044495)
    #### 栈---> person p  = new person; <----- 堆  
 
 
