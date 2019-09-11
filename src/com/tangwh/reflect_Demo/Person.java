@@ -1,40 +1,48 @@
 package com.tangwh.reflect_Demo;
 
-public class Person  extends Animal{
+public class Person  extends Animal {
 
-//    public Person(){
-//
-//        System.out.println("无参构造");
-//    }
-    public Person(String name,Integer age){
-        this.name=name;
-        this.age=age;
-    }
+    //利用反射技术实现了一个IOC 对象由别人来创建 创建同时自动注入属性信息
+    //自动注入属性的信息--->String字符串 产生一个注解 携带这些信息
 
+
+    // 自己定义的注解
+    //@MyAnnotation_Test({"twh", "18"})
     private String name;
-    public int age;
+    public Integer age;
+    public String sex;
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+    @MyAnnotation_Test({"唐维豪","18","男"})
+    public Person() {
     }
 
-    public void eat(){
-
-        System.out.println("我是Person吃饭得方法");
-    }
-    public String eat(String name){
-
-        System.out.println("我是Person带参数得方法");
-
+    public String getName() {
         return name;
     }
 
-    private void testPrivate(){
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        System.out.println("Person的私密的方法");
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    // @MyAnnotation_Test("我")
+    public void eat() {
+
+        System.out.println("我是Person吃饭得方法");
     }
 }

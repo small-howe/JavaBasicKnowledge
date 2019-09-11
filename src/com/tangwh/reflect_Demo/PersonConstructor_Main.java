@@ -3,6 +3,9 @@ package com.tangwh.reflect_Demo;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
+/**
+ * 操作类中的构造方法
+ */
 public class PersonConstructor_Main {
 
     public static void main(String[] args) {

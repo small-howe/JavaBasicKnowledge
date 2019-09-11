@@ -1,9 +1,12 @@
 package com.tangwh.SpringIoc;
 
+import com.tangwh.reflect_Demo.MyAnnotation_Test;
+
 public class Question {
     private String titile;
     private String answer;
 
+    @MyAnnotation_Test({"我的标题","我的答案"})
     public Question() {
 
     }

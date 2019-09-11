@@ -1,16 +1,16 @@
 package com.tangwh.SpringIoc;
 
+import com.tangwh.reflect_Demo.MyAnnotation_Test;
+
 public class User {
     private String name;
     private Integer age;
 
+    @MyAnnotation_Test({"唐维豪","18"})
     public User() {
     }
 
-    public User(String name, Integer age) {
-        this.name = name;
-        this.age = age;
-    }
+
 
     public String getName() {
         return name;
