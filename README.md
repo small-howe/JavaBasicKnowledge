@@ -43,7 +43,7 @@
                        余数倒叙排列为:111100   
                  用32bit表示：00000000 00000000 00000000 00111100
                二进制————>十进制 :  从右至左计算开始 每一个元素乘以2的位置(从0开始)的次幂    
-               0*2^1 + 0*2^1 + 1*2^2 + 1*2^3 + 1*2^4 + 1*2^5 = 60
+               0*2^0 + 0*2^1 + 1*2^2 + 1*2^3 + 1*2^4 + 1*2^5 = 60
                ------------------------------------------------------------------------------------------------
                八进制:每3个bit位记录为以小组————>选通过3个bit转换成十进制的数 为代表
                00 000 000 000 000 000 000 000 000 111 100
@@ -341,20 +341,89 @@ TimeZone
 	                               集合java.util
 	            Collection(值 value)			         Map(key - value)      
 	            存储的都是value			               存储的是以key-value形式存在(key无需无重复 value无需可重复)
-         •List(有序可重复)	  •	Set( 无序无重复)           • HashMap      • TreeMa    • ConcurrentHashMap    • Hashtable
-           o ArrayList            o	HashSet                  o LinkedHashMap
+         •List(有序可重复)	  •	Set( 无序无重复)           • HashMap      • TreeMap    • ConcurrentHashMap    • Hashtable
+           o ArrayList            o	HashSet                 o LinkedHashMap
            o LinkedList           o	LinkedHashSet
            o Vector               o	TreeSet
            o Stack
                 序 : 顺序	添加进去的元素  取得元素的顺序一致   注意指的不是集合自己的顺序
-                	重复：两个对象元素一致               	
+                	重复：两个对象元素一致  
+                	
+     哪些集合类是线程安全的？
+     Vector、Hashtable、Stack 都是线程安全的，而像 HashMap 则是非线程安全的，不过在 JDK 1.5 之后随着 Java. util. concurrent 并发包的出现，它们也有了自己对应的线程安全类，比如 HashMap 对应的线程安全类就是 ConcurrentHashMap。
+
+    List集合:
+    	1.ArrayList   3.Vector   2.LinkedList
+    	
+    	1.ArrayList----->底层就是一个数组
+    		所属的包 java.util
+    		如何创建对象
+    		无参数构造方法    带默认空间的构造方法    带collection参数的构造方法
+    		常用的方法---小容器
+    			存 add
+    			取 get
+    			删 remove
+    			改 set
+    			个数  size
+    
+    			add(E e)   add(int index,E e)
+    			addAll(Collection c);   add(int index,Collection c)
+    			clear();将集合内的全部元素清除
+    			boolean = contains(Object);找寻某一个给定的元素是否在集合中拥有
+    			ensureCapacity(int minCapacity);
+    			E = get(int index);
+    			int = indexOf(Object obj);  lastIndexOf();
+    			boolean = isEmpty();
+    			Iterator = list.iterator();//迭代器
+    			remove(int index)  remove(Object obj)
+    			removeAll()差集
+    			retainAll();交集
+    			E = set(int index,E value)
+    			int size();
+    			List = subList(int begin,int end);
+    			toArray();	集合变成数组
+    			toArray(T[] );
+    			trimToSize();// 变成有效元素个数那么长
+    
+    		关于泛型的问题：
+    		由于arrayList底层是一个Object[]  什么类型都可以存进去
+    		取出来的时候多态的效果 需要自己造型 显得用起来非常的麻烦
+    		JDK1.5之后--->泛型
+    		用来规定数据类型的，定义的时候用一个符号代替某种类型
+    		在使用的时候用具体的数据类型 将定义的那个符号替换掉
+    		泛型可以用在哪里?
+    		1.泛型类
+    			类定义的时候描述某种数据类型  集合的使用就是这样
+    		2.泛型接口
+    			与泛型类的使用基本一致   子类实现接口时必须添加泛型
+    		3.泛型方法
+    			方法调用时传参数   方法的泛型与类无关   带有泛型的方法可以不放在带有泛型的类中
+    		4.高级泛型  规范边界  extends  super
+    		
+            
+ LinkedList类：
+          	1.java.util包	自己封装过LinkedBox   内部类Node<T>对象(节点 prev item next)
+          	2.底层使用双向链表的数据结构形式来存储
+          		适合于插入或删除  不适合遍历轮询
+          	3.构建对象
+          		无参数构造方法   带参数的构造方法(collection)
+          	4.常用的方法
+          		增删改查   add()  remove()  set()  get()  size()	offer  poll   peek
+          		手册中提供的其他常用方法
+          		addAll   addFist   addLast()  clear()  contains()
+          		element()  getFirst()  getLast()  indexOf()  lastIndex()
+          		.....
+          	5.插入删除的特性是否像想的那样
+          		对比ArrayList  Linked
+
+             	
 ```
 ### List、Set、Map 之间的区别：
 ![](http://mawen-ufile.cn-bj.ufileos.com/a0f1ed7a-ed37-4b01-b8f1-c55e5e4a8a65.png?UCloudPublicKey=TOKEN_30fe6ff0-4d19-498b-b286-69be191b1881&Signature=rJLUBU8Qw%2B7x37Ifa8du%2FSb%2Ba3E%3D&Expires=1882923800)
  ### HashMap：
- ### [HashMap 相关](https://mp.weixin.qq.com/s/AnbkXhWttllCnLC3wLnAhA)    
+ ### [聊聊 ArrayList 问题 ](https://mp.weixin.qq.com/s?__biz=MzU2MTI4MjI0MQ==&mid=2247487320&idx=2&sn=b0291f4236b9094a201b893ed2952da0&chksm=fc7a62f6cb0debe0e9885c81d626a217edbb1af70ea34a82c7c5724e909c8d164f335c365979&mpshare=1&scene=1&srcid=&sharer_sharetime=1567836535198&sharer_shareid=fecdebee97f4d25bab2bb72e8e23a3c1&key=c05db13e7d19cdceef93eb0b94f969cde9f8fab2f4d7d4b2a96a2fdb8dcd31a3e5ff9a05d8b5d9c9afafc84546aa97520c9f54e79bb46af1043cd63272ff802aa12634ee5505712c761faf905ea3015b&ascene=1&uin=MTQwNzM1NDc3Mg%3D%3D&devicetype=Windows+10&version=62060841&lang=zh_CN&pass_ticket=F2WovTLXC5cyPfR%2Bk6FGiEM03mcV6B06QG0tAjDAL9kUSAo796aw%2F5k9vt22ts8y)
+ ### [聊聊 HashMap 问题](https://mp.weixin.qq.com/s/AnbkXhWttllCnLC3wLnAhA)    
  ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
-
  相关面试题: 
  ```
  三个值: 16,  8,  0.75
@@ -701,12 +770,124 @@ File类中的常用的方法:
 
  
 ```
-
 ## VIII.多线程:
+```
+    程序
+		可以理解为是一组静态的代码
+	进程
+		正在进行的程序	静态的代码  运行起来
+	线程
+		正在执行程序中的小单元
+		
+    new         start()      CPU分配run()    wait()	   exception/over
+	创建线程------就绪状态------执行状态-----------等待/挂起------异常/消亡
+		           |                              |
+		           |______________________________|
+			        notify(唤醒)/notifyAll(唤醒全部)
+			        
+实现线程的过程(1): 继承Thread类
+	1.自己描述一个类
+	2.继承父类Thread
+	3.重写run方法
+	4.new一个线程对象  调用start()方法 让线程进入就绪状态
+	
+实现线程的过程(2): 实现Runnable类 
+	1.自己描述一个类
+	2.实现一个父接口Runnable
+	3.重写run方法
+	4.new一个线程对象  需要创建Thread将自己的对象包起来 然后调用start()
 
+主要方法:
+        sleep();   run();    start();    setPriority();----------->Thread
+		wait()    notify()   notifyAll()               ----------->Object
+		注意wait方法  notify方法  使用
+		对象.wait();
+		对象调用wait方法  不是对象等待
+		访问此对象的线程进入等待状态
+生产消费者模型:
+	1.通过这个模型  成功的演示出了  线程安全的问题
+		两个消费者  同时访问同一个仓库对象   仓库内只有一个元素的时候
+		两个消费者并发访问  会有可能产生抢夺资源的问题
+		
+    2.自己解决一下线程安全的问题：
+    		让仓库对象被线程访问的时候   仓库对象被锁定
+    		仓库对象只能被一个线程访问   其他的线程处于等待状态
+    		特征修饰符
+    		synchronized  同步  一个时间点只有一个线程访问
+    		线程安全锁
+    		两种形式写法
+    		1.将synchronized关键字 放在方法的结构上
+    		   public synchronized void get(){}
+    		   锁定的是调用方法时的那个对象   谁调用锁谁
+    		2.将synchronized关键字 方在方法(构造方法 块)的内部  
+    		   public void get(){
+    			好多代码
+    			synchronized(对象){
+    				好多代码
+    			}
+    			好多代码
+    		   }
+    
+        3.我们应该让线程的不同状态来回切换
+    		执行   等待   执行   等待
+    		wait()	   Object类中的方法
+    		对象.wait(); 
+    		对象.wait(); 不是当前的这个对象wait
+    			  访问当前这个对象的线程wait
+    		notify      Object类中的方法
+    		notifyAll   Object类中的方法
+    		p.setPriority(10);		p.getPriority();
+    
+    		产生一个类似假死状态
+    		所有的线程都进入等待状态  没有线程做事
+    
+    	4.通过上述的生产消费者模型
+    		做一个非常完整而且安全的模型
+    		1.利用线程安全锁    特征修饰符synchronized 
+    			两种不同的写法
+    			不管怎么写   锁定的永远是对象
+    		2.利用方法控制线程状态的来回切换
+    			wait
+    			notify	notifyAll
+    			上述三个方法都是Object类中的方法
+    		3.Thread类中的方法
+    		
+    			sleep方法    静态方法(参数long 毫秒值)
+    			setPriority(10);	getPriority();
+    			设置/获取线程的优先级  1-10  
+    			数字越高优先级越高   更加容易获取CPU分配的资源碎片
+    	5.笔试题
+    	
+        			程序 进程 线程 概念的区别
+        			线程的创建方式
+        			线程的几种状态  如何切换
+        				sleep方法   wait方法的区别
+        			1.类	Thread类	  Object类
+        			2.调用	静态 类名.   对象.
+        			3.理解	哪个位置调用   对象调用方法
+        				    哪个线程等待   访问对象的其他线程等待
+        			4.唤醒	不需要别人      需要其他对象调用notify唤醒
+        			5.锁	不会释放锁      等待后会释放锁
+        			
+        6.join方法	Thread类中的方法
+        		让多个线程同步执行  变成单个线程
+        7.死锁
+        死锁的效果
+        	   模拟一个模型  演示死锁
+        	   如何解决死锁效果
+        	   经典的哲学家就餐问题
+        	   解决死锁的问题
+        		1.礼让---->产生时间差
+        		2.不要产生对象公用的问题
+        		
+        8.计时器/定时器----->线程应用
+        	java.util包
+        	Timer类
+        	无参数构造方法 创建对象
+        	timer.schedule();
 
-
-
+			          
+```
 ### 线程池(创建有七种方式(不需要死记硬背！！！))
 #### 注意:线程池的本质只有一个  无论哪个线程池，都是调用ThreadPoolExecutor线程池创建出来的。
 ```
@@ -806,7 +987,162 @@ public class threadTest{
     }
     }
 ```
-## IX.反射:
+## IX.反射机制:
+![](http://mawen-ufile.cn-bj.ufileos.com/7af020b8-1fab-4002-825d-eac1b8c518ae.jpg?UCloudPublicKey=TOKEN_30fe6ff0-4d19-498b-b286-69be191b1881&Signature=qxsNpg14sSmoi6Sc%2FYN5FxqMZXE%3D&Expires=1883398718)
+```
+反射 reflect:反射是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取的信息以及动态调用对象的方法的功能称为 Java 语言的反射机制。
+	面向对象的变成思想
+	类	从很多对象中抽取出来的公有的特征行为  抽象描述   用来描述一组对象
+	对象	现实生活中 先存在了好多对象 很多相同特征 相同行为
+
+	类是用来描述一组对象
+	反射机制认为是用来描述一组类
+	
+	Class(获取类)
+    Field(属性)    Method(方法)   Constructor(构造方法)   Package(包)
+	
+    Class		用来描述类本身
+   	Package		用来描述类所属的包
+   	Field		用来描述类中的属性
+   	Method		用来描述类中的方法
+   	Constructor	用来描述类中的构造方法
+   	Annotation	用来描述类中的注解
+   	
+   	1.如何获取Class:
+    		如下三种方式
+    		Class clazz = Class.forName("包名.类名");
+    		Class clazz = 类名.class;
+    		Class clazz = 对象.getClass();//Object类中的方法
+    如何操作类中的方法:
+    		Class类中的方法
+    		Method m = class.getMethod("方法名",Class...参数类型);	获取公有的方法(自己类+父类)
+    		Method[] = clazz.getMethods();	获取所有的方法(公有 自己+父类)
+    		Method = getDeclaredMethod("方法名字",参数类型的class...)	获取一个方法(自己类 公有 私有)
+    		setAccessible(true); // 设置可
+    		Method[] = getDeclaredMethods();			获取全部的方法(自己类 公有 私有)
+    		获取构造方法
+    		Constructor = clazz.getConstructor(Class...参数类型)
+    		Constructor[] cons = clazz.getConstructors();
+                		clazz.getDeclaredConstructor();
+                		clazz.getDeclaredConstructors();
+    2.Class中的常用方法
+    		1.int result = getModifiers();	获取类的修饰符(权限 特征)
+    			每一个修饰符 用一个整数来进行表示
+            	0开始---0 1 2 4 8 16 32 64 128 256 512
+            	0--默认不写  1--public  2--private  4--protected
+            	8--static   16--final  32--synchronized  64volatile
+            	128--transient  256--native  512--interface  1024--abstract
+    		2.String name = getName();获取名字
+    		3.String simpleName = getSimpleName();简单名
+    		4.Package p = getPackage() ;p.getName(); //获取包
+    		5.Class sclazz = getSuperClass();//获取超类(父类)
+    		6.Class[] classes = getInterface();获取当前类的父类所有接口
+    		-----------------------------------------------------------------------
+    		7.Object obj = newInstance();//默认调用无参数构造方法创建对象
+    		8.Field f = getField("属性名");
+    		   Field[] fs = getFields();
+    		   如上的两个方法只能获取公有的属性  但是包含继承过来的父类属性
+    		9.getDeclaredField("属性");
+    		   Field[] fs = getDeclaredFields();
+    		   如上的两个方法能获取公有的和私有的属性  但是只能获取本类中的属性
+    		   
+    3.Field(属性)类中的常用方法：
+    		int = getModifiers	获取属性修饰符(权限+特征)
+            		Class = getType	获取属性的类型对应的那个class
+            		String = getName	获取属性的名字
+            		操作属性
+            		set(对象,值);	给属性赋值
+            		Object = get(对象)	从某个对象内取得属性的值
+            		如果是私有属性不能直接操作的
+            		setAccessable(true);  设置一个使用权  准入
+            		
+    Method(方法)类中的常用:
+    		int mm = m.getModifiers();//获取方法的修饰符(权限+特征)
+            Class mrt = m.getReturnType();//获取返回值数据类型
+            String mn = m.getName();//获取方法的名字
+            Class[] mpts = m.getParameterTypes();//获取方法参数列表的类型
+            Class[] mets = m.getExceptionTypes();//获取方法抛出异常的类型
+            
+    		如何操作方法
+    		调用方法   让他执行一次
+    		Object result = invoke(对象,执行方法需要传递的所有参数...);
+    		若方法是私有的方法  不允许操作
+    		可以设置setAccessable(true)   设置方法使用权  准入
+    		
+    Constructor(构造方法)类中的常用方法:
+    		con.getModifiers(); //修饰符
+            	con.getName();//名字
+            	con.getParameterTypes();//参数
+            	con.getExceptionTypes(); //异常
+    		如何操作构造方法
+    		执行一次   创建对象
+    		Object = newInstance(执行构造方法时的所有参数);
+    		con.setAccessible(true);
+```
+### 修改String 字符串内容:
+```java
+package com.tangwh.reflect_Demo;
+import java.lang.reflect.Field;
+public class UpdateString_Test {
+    public static void main(String[] args) {
+        String str = new String("abc");
+        System.out.println("未修改前的" + str);
+        // 利用反射机制 去访问私有属性 修改String 的值 虽然不合理
+        // 1.获取String 对应Class
+        Class<String> stringClass = String.class;
+        try {
+            // 2.通过stringClass 获取Value属性
+            Field value = stringClass.getDeclaredField("value");
+            // 3. 设置私有属性允许被修改
+            value.setAccessible(true);
+            // 4. 获取value 属性内存地址
+            // private final char[] value={'a','b','c'};
+            char[] temp = (char[]) value.get(str);
+            temp[0] = '唐';
+            temp[1] = '维';
+            temp[2] = '豪';
+            // 最终输出
+            System.out.println("未修改后的" + str);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+```
+### 反射之注解(Annotation)
+```
+注解
+1.注解的写法
+	@XXX [(一些信息)]
+2.注解放置在哪里
+	类的上面   属性上面  方法上面  构造方法上面  参数前面
+3.注解的作用
+	1.用来充当注释的作用(仅仅是一个文字的说明)   @Deprecated
+	2.用来做代码的检测(验证)	@Override
+   *3.可以携带一些信息(内容)	文件.properties  .xml   注解
+4.Java中有一些人家写好的注解供我们使用
+	@Deprecated     用来说明方法是废弃的
+	@Override          用来做代码检测   检测此方法是否是一个重写
+	@SuppressWarnings(信息)	String[]    {""}   如果数组内的元素只有一个长度  可以省略{}
+		unused	变量定义后未被使用
+		serial	类实现了序列化接口  不添加序列化ID号
+		rawtypes	集合没有定义泛型
+		deprecation   方法以废弃    
+		*unchecked   出现了泛型的问题  可以不检测
+		all	包含了以上所有(不推荐)
+
+
+```
+
+
+
+
+
+
+
 
 ## Ⅹ异常(错误):
 ```
@@ -896,9 +1232,9 @@ public class threadTest{
    		不管返回值return关键字在哪里   finally一定会执行完毕
    		返回值的具体结果   看情况 	
 ```
-## Ⅺ.JVM:
- ![](http://mawen-ufile.cn-bj.ufileos.com/82aa16d0-655f-43c2-a9fc-4ff5115026a8.png?UCloudPublicKey=TOKEN_30fe6ff0-4d19-498b-b286-69be191b1881&Signature=GQuSCe9BmE3HRb5DZPWUxDxk2G8%3D&Expires=1883044495)
-   #### 栈---> person p  = new person; <----- 堆  
+## Ⅺ.JVM: 
+### JVM模型:
+ ### [JVM 原理聊聊](http://mp.weixin.qq.com/s?__biz=MzU3MDc3OTI1NA==&mid=2247483886&idx=1&sn=b79f1af925a4a3cf40cec6501f033238&chksm=fceb72f7cb9cfbe1a61b6bd8d6d5dd56b138f076324599b06e9b4706d9147a3d9235b096ee09&mpshare=1&scene=1&srcid=#rd)
 
 
 
