@@ -32,5 +32,6 @@ public class Testlist {
         int i1 = linkedBox.get(1);
         System.out.println(i1);
 
+
     }
 }

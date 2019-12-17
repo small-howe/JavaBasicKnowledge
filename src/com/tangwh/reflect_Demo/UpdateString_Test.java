@@ -1,18 +1,25 @@
 package com.tangwh.reflect_Demo;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 public class UpdateString_Test {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException, InstantiationException {
         String str = new String("abc");
+
         System.out.println("未修改前的" + str);
         // 利用反射机制 去访问私有属性 修改String 的值 虽然不合理
         // 1.获取String 对应Class
         Class<String> stringClass = String.class;
+
         try {
+
             // 2.通过stringClass 获取Value属性
             Field value = stringClass.getDeclaredField("value");
-            // 3. 设置私有属性允许被修改
+
+
+
+            // 3. 设置私有属性允许被修改.toUpperCase()
             value.setAccessible(true);
             // 4. 获取value 属性内存地址
             // private final char[] value={'a','b','c'};
@@ -28,4 +35,8 @@ public class UpdateString_Test {
             e.printStackTrace();
         }
     }
-}
+
+
+
+    }
+

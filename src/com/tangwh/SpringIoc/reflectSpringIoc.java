@@ -58,10 +58,7 @@ public class reflectSpringIoc {
                 //需要将注解内读取到的String类型的值 转化成属性类型对应的值
                 // 参数： 对象
                 method.invoke(obj,type.getConstructor(String.class).newInstance(invoke[i]));
-
             }
-
-
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

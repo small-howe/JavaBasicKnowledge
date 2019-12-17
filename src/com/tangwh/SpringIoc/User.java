@@ -6,7 +6,7 @@ public class User {
     private String name;
     private Integer age;
 
-    @MyAnnotation_Test({"唐维豪","18"})
+    @MyAnnotation_Test({"胡曼","22"})
     public User() {
     }
 

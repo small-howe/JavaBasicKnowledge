@@ -16,6 +16,8 @@
           '&&' 短路与:第一个表达式则为false 则不计算后面的表达式 结果集为false;
           '||' 短路或:第一个表达式则为true 则不计算后面的表达式 结果集为true;
           '^'异或(前后两个结果不一致就可以了)   
+        三目运算符:min=(a<b)?a:b; 其中"(a<b)?a:b"是一个"条件表达式",它是这样执行的:　　如果a<b为真,则表达式取a值,否则取b值.s
+        
          ----------------------------------------------------------------------------------------------------
        位bit运算:'&'按位与,  '|'按位或,  '^'按位异或,  '~'按位取反,  '<<'按位左位移, '>>'按位右位移 , '>>>'按位右位移(无符号)
                  3 & 5 = ?                                 3 & 5 = ?    3 | 5 = ?        3 ^ 5 = ?
@@ -53,7 +55,7 @@
                十六进制:每4个bit记录为以小组————>选通过4个bit转换成十进制的数 为代表 
                00000 0000 0000 0000 0000 0000 0011 1100
                                           0X    3     C （12)    10-A 11-B 12-C 13-D 13-E 15-F
-               八进制:0123456789ABCDEF将4个二进制合并为一个 计算成十进制表示 0X3C                       
+               十六进制:0123456789ABCDEF将4个二进制合并为一个 计算成十进制表示 0X3C                       
 ```                
 
 ## II.for循环:
@@ -421,6 +423,7 @@ TimeZone
 ### List、Set、Map 之间的区别：
 ![](http://mawen-ufile.cn-bj.ufileos.com/a0f1ed7a-ed37-4b01-b8f1-c55e5e4a8a65.png?UCloudPublicKey=TOKEN_30fe6ff0-4d19-498b-b286-69be191b1881&Signature=rJLUBU8Qw%2B7x37Ifa8du%2FSb%2Ba3E%3D&Expires=1882923800)
  ### HashMap：
+ ### [面试加分项-HashMap源码中这些常量的设计目的](https://juejin.im/post/5d7195f9f265da03a6533942?utm_source=gold_browser_extension)
  ### [聊聊 ArrayList 问题 ](https://mp.weixin.qq.com/s?__biz=MzU2MTI4MjI0MQ==&mid=2247487320&idx=2&sn=b0291f4236b9094a201b893ed2952da0&chksm=fc7a62f6cb0debe0e9885c81d626a217edbb1af70ea34a82c7c5724e909c8d164f335c365979&mpshare=1&scene=1&srcid=&sharer_sharetime=1567836535198&sharer_shareid=fecdebee97f4d25bab2bb72e8e23a3c1&key=c05db13e7d19cdceef93eb0b94f969cde9f8fab2f4d7d4b2a96a2fdb8dcd31a3e5ff9a05d8b5d9c9afafc84546aa97520c9f54e79bb46af1043cd63272ff802aa12634ee5505712c761faf905ea3015b&ascene=1&uin=MTQwNzM1NDc3Mg%3D%3D&devicetype=Windows+10&version=62060841&lang=zh_CN&pass_ticket=F2WovTLXC5cyPfR%2Bk6FGiEM03mcV6B06QG0tAjDAL9kUSAo796aw%2F5k9vt22ts8y)
  ### [聊聊 HashMap 问题](https://mp.weixin.qq.com/s/AnbkXhWttllCnLC3wLnAhA)    
  ![](http://small-howe.cn-bj.ufileos.com/ce6daaa9-0434-4c32-a860-3205e57ee743.png?UCloudPublicKey=TOKEN_7728f428-03f0-4a5f-b3fd-e5632771d02e&Signature=rRIYuyjoMBi8szUzhvv1q61YB08%3D&Expires=1882407463)
@@ -771,6 +774,7 @@ File类中的常用的方法:
  
 ```
 ## VIII.多线程:
+### [聊聊多线程](https://juejin.im/post/5ab116875188255561411b8a#heading-0)
 ```
     程序
 		可以理解为是一组静态的代码
@@ -1258,7 +1262,7 @@ public class UpdateString_Test {
 ## Ⅺ.JVM: 
 ### JVM模型:
  ### [JVM 原理聊聊](http://mp.weixin.qq.com/s?__biz=MzU3MDc3OTI1NA==&mid=2247483886&idx=1&sn=b79f1af925a4a3cf40cec6501f033238&chksm=fceb72f7cb9cfbe1a61b6bd8d6d5dd56b138f076324599b06e9b4706d9147a3d9235b096ee09&mpshare=1&scene=1&srcid=#rd)
-
+ ### [聊聊JVM内存模型](https://juejin.im/post/5d775f226fb9a06af471eb4f?utm_source=gold_browser_extension)
 
 
    ### 堆内存:new创建的对象  用 Garbage Collection垃圾回收器  GC 回收
@@ -1266,18 +1270,171 @@ public class UpdateString_Test {
     new  出来的    垃圾回收器GC    对象空间没有任何引用指向视为垃圾
    OutOfMemoryError 堆内存溢出错误
    ```
-  
-   
 
    ### 栈内存:存--->创建开始 用完立即回收   StackOverflowError(栈内存溢出)
      
      变量      方法执行临时空间  创建开始 用完立即回收
      StackOverflowError 栈内存溢出错误
-     
-        			
     
-   
-   
    
    ### 方法区:类   常量   静态   只有一份回收不了   加载类  类模板
    
+   ### 常用命令:
+   
+   1. 如何查看jvm的内存大小？
+   jps
+   jps -q	只显示java的进程号
+   jps -l	显示java的进程号以及执行的全称
+   jps -m	显示java进程号，执行的民称，传入的参数
+   jps -v	java程序启动时，java虚拟机的参数
+   
+   我们的程序后面如果没有跟任何参数，证明使用的是java默认的参数。
+   
+   2. 没有参数的时候，默认的内存大小是多少？
+   java -XX:+PrintCommandLineFlags -version
+   
+   3. 我们如何设置jvm的大小？
+   -Xmx	Java堆空间最大值
+   -Xms	Java堆空间初始化值
+   -Xmn	Java堆空间年轻代大小
+   -Xss	Java中每个线程的Stack(栈)大小
+   
+   4. 如何查看java程序的gc情况
+   jstat -gc 进程id 时间 次数
+   
+   S0C    幸存者1区大小
+   S1C    幸存者2区大小
+   S0U    幸存者1区使用的大小
+   S1U    幸存者2区使用的大小
+   EC      伊甸园区大小
+   EU      伊甸园区使用的大小
+   OC      老年代大小
+   OU      老年代使用的大小
+   MC     方法区大小
+   MU    方法区使用大小
+   CCSC   
+   CCSU   
+   YGC     年轻代垃圾回收次数 youngGC次数
+   YGCT   年轻代垃圾回收消耗的时间
+   FGC    老年代垃圾回收次数
+   FGCT     老年代垃圾回收时间
+   GCT	垃圾回收总的耗时
+   
+   我们要避免full gc，因为full gc时候程序会停止。
+   1. 如果伊甸园区大小和伊甸园区使用大小几乎相等怎么办？适当增加年轻代大小。或者程序有问题（程序会频繁大量创建对象，这是需要查看程序是不是有一些对象可以复用，而不用重新创建。）
+   
+   2. 如果老年带大小和老年代使用的大小几乎相等时，适当减少一点年轻代的大小或者增加整个堆内存的大小。年轻代：老年代=5：5  4：6  3：7  2：8
+   或者查看程序，是不是频繁创建大对象，看看是否有必要频繁创建大对象，要对程序进行优化。
+   
+   3. 如果YGC过高，代表有太多的临时变量，需要优化代码。如果实在优化不了代码，增加整个堆内存或者增加年轻代。
+   
+   4. 如果TGCT过大，代表有太多的临时变量，需要优化代码。如果实在优化不了代码，增加整个堆内存或者增加年轻代。
+   
+   5. 如果FGC过大，证明系统非常危险。需要增加老年代的比例，或者增加整个对空间的大小。
+### 十大经典算法:
+```java
+/**
+     * 冒泡排序
+     *
+     * @param array
+     * @return
+     */
+public class  test{
+    public static int[] bubbleSort(int[] array) {
+        if (array.length == 0)
+            return array;
+        for (int i = 0; i < array.length; i++)
+            for (int j = 0; j < array.length - 1 - i; j++)
+                if (array[j + 1] < array[j]) {
+                    int temp = array[j + 1];
+                    array[j + 1] = array[j];
+                    array[j] = temp;
+                }
+        return array;
+    }
+    }
+```
+## Lamda表达式: 
+- 总结:Lambda 表达式:只能有 一行代码的情况下 才能简化成一行  如果有多行 那么就用代码{} 包裹
+- 前提是接口为函数式接口 函数式接口 : 一个接口下只能由一个 接口
+- 多个参数:多个参数也可以去掉参数类型 要去掉就去掉
+```java
+package com.tangwh.lambdaDemo;
+
+public class TestLambda2 {
+
+    public static void main(String[] args) {
+
+        // 局部类
+//        class Love implements Ilove{
+//
+//
+//            @Override
+//            public void love(int a) {
+//                System.out.println("I love you"+a);
+//            }
+////        }
+
+  //匿名内部类
+//        Ilove love = new Ilove() {
+//            @Override
+//            public void love(int a) {
+//                System.out.println("I love you"+a);
+//            }
+//        };
+
+        //Lambda 简化
+//        Ilove ilove = (int a) -> {
+//            System.out.println("I love you" + a);
+//        };
+
+        //Lambda 再次简化
+//        Ilove  ilove = (a)->{
+//            System.out.println("I love you" + a);
+//        };
+
+
+        //Lambda 再次简化
+//        Ilove  ilove = a->{
+//            System.out.println("I love you" + a);
+//        };
+
+        //Lambda 再次简化
+        Ilove  ilove = a-> System.out.println("I love you" + a);
+
+ // 总结:Lambda 表达式:只能有 一行代码的情况下 才能简化成一行  如果有多行 那么就用代码{} 包裹
+        // 前提是接口为函数式接口 函数式接口 : 一个接口下只能由一个 接口
+        // 多个参数:多个参数也可以去掉参数类型 要去掉就去掉
+        ilove.love(3);
+
+
+    }
+
+// 静态类
+
+// static class Love implements Ilove{
+//
+//
+//    @Override
+//    public void love(int a) {
+//        System.out.println("I love you"+a);
+//    }
+//}
+
+}
+
+interface Ilove {
+    void love(int a);
+}
+
+ // 外部类
+//class Love implements Ilove{
+//
+//
+//    @Override
+//    public void love(int a) {
+//        System.out.println("I love you"+a);
+//    }
+//}
+
+```
