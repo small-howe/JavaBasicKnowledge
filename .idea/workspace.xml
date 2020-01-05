@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/arithmetic/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/lambdaDemo/TestLambda1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/lambdaDemo/TestLambda2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/thread_Demo/deadlock/DeadLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/thread_Demo/juc/TestJuc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/thread_Demo/juc/TestPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/thread_Demo/lock/TestLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeBank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeBuyTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/SpringIoc/MySpring.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/SpringIoc/MySpring.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/SpringIoc/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/SpringIoc/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/SpringIoc/reflectSpringIoc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/SpringIoc/reflectSpringIoc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/arrayBoxAndLinkBox/Testlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/arrayBoxAndLinkBox/Testlist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/reflect_Demo/UpdateString_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/reflect_Demo/UpdateString_Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tangwh/SpringIoc/MySpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/SpringIoc/MySpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tangwh/SpringIoc/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/SpringIoc/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tangwh/SpringIoc/reflectSpringIoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/SpringIoc/reflectSpringIoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tangwh/arrayBoxAndLinkBox/Testlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/arrayBoxAndLinkBox/Testlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tangwh/reflect_Demo/UpdateString_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/reflect_Demo/UpdateString_Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="581">
+              <first_editor relative-caret-position="-490">
                 <caret line="1361" column="30" selection-start-line="1361" selection-start-column="30" selection-end-line="1438" />
               </first_editor>
               <second_editor />
@@ -490,6 +469,7 @@
       <workItem from="1575593092505" duration="16069000" />
       <workItem from="1575623009967" duration="198000" />
       <workItem from="1575962086765" duration="5000" />
+      <workItem from="1576546861005" duration="1217000" />
     </task>
     <servers />
   </component>
@@ -505,7 +485,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287343000" />
+    <option name="totallyTimeSpent" value="288560000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,7 +499,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.32197616" visible="true" weight="0.15413333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.32197616" visible="true" weight="0.15573333" />
       <window_info id="Structure" order="1" sideWeight="0.6780239" side_tool="true" weight="0.22654155" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -536,7 +516,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.10244989" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6124722" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.25953078" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32850778" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="13" />
@@ -984,7 +964,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="581">
+          <first_editor relative-caret-position="-490">
             <caret line="1361" column="30" selection-start-line="1361" selection-start-column="30" selection-end-line="1438" />
           </first_editor>
           <second_editor />
