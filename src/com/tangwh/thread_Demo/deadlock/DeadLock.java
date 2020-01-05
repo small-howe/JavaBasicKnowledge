@@ -10,7 +10,6 @@ public class DeadLock {
         g1.start();
         g2.start();
     }
-
 }
 
 /**
