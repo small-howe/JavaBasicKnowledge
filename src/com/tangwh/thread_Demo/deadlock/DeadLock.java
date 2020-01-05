@@ -11,7 +11,6 @@ public class DeadLock {
         g2.start();
     }
 }
-
 /**
  * 口红
  */
