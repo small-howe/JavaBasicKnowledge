@@ -292,6 +292,7 @@ System类
 		方法gc()  exit(0);  currentTimeMillis();当前时间毫秒
 ```
 #### 日期相关的:
+### [18个Java8日期处理的实践，太有用了](https://mp.weixin.qq.com/s?__biz=MzI4Njc5NjM1NQ==&mid=2247491166&idx=1&sn=0a475dbbef7ebf08c5522c8be111c1f1&chksm=ebd62172dca1a8642e48feec8ca30896a926cd6a05902abfd2136d0f41c563304f15527d217e&mpshare=1&scene=1&srcid=&sharer_sharetime=1579059654706&sharer_shareid=3e499608072ac493395b7450c8669b08&key=265b7f57d74a983ba3b89c92385ca34dd43af562ea3a1659abd9163e4ef85e06830becf175c476097c5a4c85172e37458be76f100d3c509b6e2b7eb293c127b5b05308dc133787e76e653517e15814db&ascene=1&uin=MTQwNzM1NDc3Mg%3D%3D&devicetype=Windows+10&version=6208006f&lang=zh_CN&exportkey=AYNuOzTBM0WRqzGtLDmggo0%3D&pass_ticket=2gYSVsfHYQYioo6SQ2%2F6EPAu2m3KjCYMVv9K4g5MGHlk2H83kkPK2h4oIzmKKTyX)
 ```
 Date类
 	1.通常使用的是java.util包
@@ -776,6 +777,7 @@ File类中的常用的方法:
 ```
 ## VIII.多线程:
 ### [聊聊多线程](https://juejin.im/post/5ab116875188255561411b8a#heading-0)
+
 ```
     程序
 		可以理解为是一组静态的代码

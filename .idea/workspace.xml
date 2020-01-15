@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,34 +34,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeBuyTicket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeBank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-490">
-                <caret line="1361" column="30" selection-start-line="1361" selection-start-column="30" selection-end-line="1438" />
+              <first_editor relative-caret-position="256">
+                <caret line="294" column="686" selection-start-line="294" selection-start-column="686" selection-end-line="294" selection-end-column="686" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -108,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/deadlock/DeadLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1722">
-              <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+            <state relative-caret-position="252">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -161,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/tangwh/packagingClass/Math_Demo.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/packagingClass/PackagingClass_Demo.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/packagingClass/Integer_Demo.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_map.java" />
@@ -204,14 +200,15 @@
         <option value="$PROJECT_DIR$/src/com/tangwh/lambdaDemo/TestLamda1.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/lambdaDemo/TestLambda1.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/lambdaDemo/TestLambda2.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeBuyTicket.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeBank.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeList.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/juc/TestJuc.java" />
-        <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/deadlock/DeadLock.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/lock/TestLock.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/juc/TestPool.java" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/deadlock/DeadLock.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -251,9 +248,60 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
+              <item name="thread_Demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
+              <item name="thread_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="deadlock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
+              <item name="thread_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="deadlock" type="462c0819:PsiDirectoryNode" />
+              <item name="DeadLock.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
             <path>
               <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
@@ -263,8 +311,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -470,7 +516,45 @@
       <workItem from="1575623009967" duration="198000" />
       <workItem from="1575962086765" duration="5000" />
       <workItem from="1576546861005" duration="1217000" />
+      <workItem from="1578201468309" duration="1236000" />
+      <workItem from="1579060534512" duration="99000" />
     </task>
+    <task id="LOCAL-00001" summary="Java基础知识">
+      <created>1578201506571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578201506571</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Java 基础知识">
+      <created>1578201718567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578201718567</updated>
+    </task>
+    <task id="LOCAL-00003" summary="结合代码 相关操作">
+      <created>1578201794858</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578201794858</updated>
+    </task>
+    <task id="LOCAL-00004" summary="代码操作">
+      <created>1578202034577</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578202034577</updated>
+    </task>
+    <task id="LOCAL-00005" summary="知识理论">
+      <created>1578202066025</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578202066025</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -485,7 +569,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288560000" />
+    <option name="totallyTimeSpent" value="289895000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,8 +582,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.32197616" visible="true" weight="0.15573333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.32197616" visible="true" weight="0.15884861" />
       <window_info id="Structure" order="1" sideWeight="0.6780239" side_tool="true" weight="0.22654155" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -516,7 +601,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6124722" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38641426" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.25953078" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32850778" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="13" />
@@ -530,33 +615,25 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Mybatis datasource" order="9" side_tool="true" />
+      <window_info anchor="right" id="Word Book" order="10" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Java基础知识" />
+    <MESSAGE value="Java 基础知识" />
+    <MESSAGE value="结合代码 相关操作" />
+    <MESSAGE value="代码操作" />
+    <MESSAGE value="知识理论" />
+    <option name="LAST_COMMIT_MESSAGE" value="知识理论" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/file_Demo/Test_file.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_161/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/for_Demo/forDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
@@ -906,6 +983,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="256">
+            <caret line="294" column="686" selection-start-line="294" selection-start-column="686" selection-end-line="294" selection-end-column="686" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -942,8 +1039,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/deadlock/DeadLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1722">
-          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+        <state relative-caret-position="252">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -958,16 +1055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-490">
-            <caret line="1361" column="30" selection-start-line="1361" selection-start-column="30" selection-end-line="1438" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
