@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -517,7 +514,7 @@
       <workItem from="1575962086765" duration="5000" />
       <workItem from="1576546861005" duration="1217000" />
       <workItem from="1578201468309" duration="1236000" />
-      <workItem from="1579060534512" duration="99000" />
+      <workItem from="1579060534512" duration="135000" />
     </task>
     <task id="LOCAL-00001" summary="Java基础知识">
       <created>1578201506571</created>
@@ -554,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578202066025</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="知识理论">
+      <created>1579060653268</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579060653268</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -569,7 +573,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289895000" />
+    <option name="totallyTimeSpent" value="289931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,7 +586,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.32197616" visible="true" weight="0.15884861" />
       <window_info id="Structure" order="1" sideWeight="0.6780239" side_tool="true" weight="0.22654155" />
@@ -601,7 +604,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38641426" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3429844" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.25953078" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32850778" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="13" />
