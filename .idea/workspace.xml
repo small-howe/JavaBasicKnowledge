@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="" />
+    <list default="true" id="96e0a53e-2651-481d-8694-04c7fd51b83a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/tangwh/sinatv/sinatvHowe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/thread_Demo/deadlock/Lipstick.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/thread_Demo/deadlock/Lipstick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/thread_Demo/deadlock/Makeup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/thread_Demo/deadlock/Makeup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/thread_Demo/deadlock/Mirror.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaBasicKnowledge/com/tangwh/thread_Demo/deadlock/Mirror.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tangwh/sinatv/ALI2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/sinatv/ALI2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tangwh/sinatv/MD5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tangwh/sinatv/MD5Utils.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,37 +39,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="256">
-                <caret line="294" column="686" selection-start-line="294" selection-start-column="686" selection-end-line="294" selection-end-column="686" />
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/sinatv/AliPlayAndPushUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/sinatv/ALI2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="210">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="56" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeList.java">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/sinatv/MD5Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="168">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/tangwh/sinatv/sinatvHowe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/juc/TestPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="273">
               <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -155,10 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/tangwh/packagingClass/PackagingClass_Demo.java" />
-        <option value="$PROJECT_DIR$/src/com/tangwh/packagingClass/Integer_Demo.java" />
-        <option value="$PROJECT_DIR$/src/com/tangwh/stream_Demo/Test_map.java" />
-        <option value="$PROJECT_DIR$/src/com/tangwh/String_Demo/StringBuilder.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/String_Demo/StringBuilder_Test.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/String_Demo/String_Test.java" />
         <option value="$PROJECT_DIR$/src/com/tangwh/String_Demo/Regular_Test.java" />
@@ -206,6 +220,10 @@
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/src/com/tangwh/thread_Demo/deadlock/DeadLock.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/sinatv/AliPlayAndPushUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/sinatv/ALI2.java" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/sinatv/MD5Utils.java" />
+        <option value="$PROJECT_DIR$/src/com/tangwh/sinatv/sinatvHowe.java" />
       </list>
     </option>
   </component>
@@ -232,9 +250,9 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="610" />
-    <option name="y" value="30" />
-    <option name="width" value="980" />
+    <option name="x" value="668" />
+    <option name="y" value="22" />
+    <option name="width" value="1207" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -247,6 +265,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="CatdeaLogs" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,26 +297,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="thread_Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="thread_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="deadlock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javaBasicKnowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tangwh" type="462c0819:PsiDirectoryNode" />
-              <item name="thread_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="deadlock" type="462c0819:PsiDirectoryNode" />
-              <item name="DeadLock.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="sinatv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javaBasicKnowledge" type="b2602c69:ProjectViewProjectNode" />
@@ -307,7 +307,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,13 +348,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestPool">
-    <configuration name="DeadLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tangwh.thread_Demo.deadlock.DeadLock" />
+  <component name="RunManager" selected="Application.sinatvHowe">
+    <configuration name="ALI2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangwh.sinatv.ALI2" />
       <module name="javaBasicKnowledge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tangwh.thread_Demo.deadlock.*" />
+          <option name="PATTERN" value="com.tangwh.sinatv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -363,12 +362,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJuc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tangwh.thread_Demo.juc.TestJuc" />
+    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangwh.sinatv.MD5Utils" />
       <module name="javaBasicKnowledge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tangwh.thread_Demo.juc.*" />
+          <option name="PATTERN" value="com.tangwh.sinatv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -402,12 +401,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnsafeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tangwh.thread_Demo.syn.UnsafeList" />
+    <configuration name="sinatvHowe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tangwh.sinatv.sinatvHowe" />
       <module name="javaBasicKnowledge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tangwh.thread_Demo.syn.*" />
+          <option name="PATTERN" value="com.tangwh.sinatv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -417,11 +416,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sinatvHowe" />
+        <item itemvalue="Application.ALI2" />
+        <item itemvalue="Application.MD5Utils" />
         <item itemvalue="Application.TestPool" />
         <item itemvalue="Application.TestLock" />
-        <item itemvalue="Application.DeadLock" />
-        <item itemvalue="Application.TestJuc" />
-        <item itemvalue="Application.UnsafeList" />
       </list>
     </recent_temporary>
   </component>
@@ -515,6 +514,15 @@
       <workItem from="1576546861005" duration="1217000" />
       <workItem from="1578201468309" duration="1236000" />
       <workItem from="1579060534512" duration="135000" />
+      <workItem from="1579060723242" duration="261000" />
+      <workItem from="1579067101558" duration="5009000" />
+      <workItem from="1579076261127" duration="1117000" />
+      <workItem from="1579082641710" duration="88000" />
+      <workItem from="1579082777466" duration="71000" />
+      <workItem from="1579091150919" duration="91000" />
+      <workItem from="1579139281464" duration="3168000" />
+      <workItem from="1579143354062" duration="1884000" />
+      <workItem from="1579149084802" duration="2944000" />
     </task>
     <task id="LOCAL-00001" summary="Java基础知识">
       <created>1578201506571</created>
@@ -558,7 +566,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579060653268</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="知识理论">
+      <created>1579060733852</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579060733852</updated>
+    </task>
+    <task id="LOCAL-00008" summary="直播推流 播流代码生成">
+      <created>1579091222234</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579091222234</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -573,7 +595,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289931000" />
+    <option name="totallyTimeSpent" value="304564000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,8 +608,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.32197616" visible="true" weight="0.15884861" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.32197616" visible="true" weight="0.1369936" />
       <window_info id="Structure" order="1" sideWeight="0.6780239" side_tool="true" weight="0.22654155" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -596,7 +619,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5031056" side_tool="true" weight="0.22989276" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.3518931" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.45100224" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5011136" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -604,7 +627,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991204" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3429844" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.14142539" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.25953078" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32850778" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="13" />
@@ -612,7 +635,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32942432" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven" order="6" weight="0.3297587" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -630,44 +653,14 @@
     <MESSAGE value="结合代码 相关操作" />
     <MESSAGE value="代码操作" />
     <MESSAGE value="知识理论" />
-    <option name="LAST_COMMIT_MESSAGE" value="知识理论" />
+    <MESSAGE value="直播推流 播流代码生成" />
+    <option name="LAST_COMMIT_MESSAGE" value="直播推流 播流代码生成" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/for_Demo/forDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/file_Demo/Recursion_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/Warehouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/Thread_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/ThreadJoinTwo_Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -989,7 +982,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="256">
+          <first_editor relative-caret-position="193">
             <caret line="294" column="686" selection-start-line="294" selection-start-column="686" selection-end-line="294" selection-end-column="686" />
           </first_editor>
           <second_editor />
@@ -1008,7 +1001,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/syn/UnsafeList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="168">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1025,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tangwh/thread_Demo/juc/TestPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="273">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1058,6 +1051,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/sinatv/MD5Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/sinatv/ALI2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="56" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/sinatv/AliPlayAndPushUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tangwh/sinatv/sinatvHowe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -5,6 +5,8 @@ import java.security.MessageDigest;
 import java.util.UUID;
 
 public class MD5Utils {
+
+
     public static String getMD5(String str) {
         try {
             // 生成一个MD5加密计算摘要

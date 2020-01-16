@@ -17,8 +17,10 @@ public class ALI2 {
          */
         String AppName = "AppName"; //自定义的AppNmae
         String StreamName = "StreamName"; // 自定义的StreaNmae
-        String host = "live.bajie188.com"; //播流的域名
-        String key = "xixian123";// 鉴权KEY
+        String pullHost = "pull.bajie188.com"; //播流的域名
+        String pushHost = "push.bajie188.com" ;// 推流直播
+
+        String key = "9i1oRW7aWI";// 鉴权KEY
 
         /**
          * 时间戳 有效十几件
@@ -30,13 +32,13 @@ public class ALI2 {
         String strpush = "/" + AppName + "/" + StreamName + "/" + time + "-0-0-" + key;
 
 
-        String pushurl = "rtmp://" + host + "/" + AppName + "/" + StreamName + "?auth_key=" + time + "-0-0-" + MD5Utils.getMD5(strpush);
+        String pushurl = "rtmp://" + pushHost + "/" + AppName + "/" + StreamName + "?auth_key=" + time + "-0-0-" + MD5Utils.getMD5(strpush);
         String strviewrtmp = "/"+AppName+"/"+StreamName+"-"+time+"0-0-"+key;
         String sruviewflv ="/"+AppName+"/"+StreamName+".flv"+"-"+time+"0-0-"+key;
         String sruviewm3u8 = "/"+AppName+"/"+StreamName+".m3u8"+"-"+time+"0-0-"+key;
 
 
-        String rtmpurl = "rtmp://"+host+"/"+AppName+"/"+StreamName+"?auth_key=" + time + "-0-0-" + MD5Utils.getMD5(strviewrtmp);
+        String rtmpurl = "rtmp://"+pullHost+"/"+AppName+"/"+StreamName+"?auth_key=" + time + "-0-0-" + MD5Utils.getMD5(strviewrtmp);
         String flvurl="http://"+AppName+"/"+StreamName+".flv"+"auth_key="+time+"0-0-"+MD5Utils.getMD5(sruviewflv);
         String m3u8url ="http://"+AppName+"/"+StreamName+".m3u8"+"auth_key="+time+"0-0-"+MD5Utils.getMD5(sruviewm3u8);
 
