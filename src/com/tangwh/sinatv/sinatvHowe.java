@@ -42,8 +42,6 @@ public class sinatvHowe {
         // 获取当前系统时间为
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = simpleDateFormat.parse(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(time));
-
-
         long ts = date.getTime(); // 得出的是毫秒 阿里云不需要毫秒,除以1000
         ts = ts / 1000;
         res = String.valueOf(ts);
