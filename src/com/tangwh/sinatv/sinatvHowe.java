@@ -7,26 +7,35 @@ import java.util.Date;
 public class sinatvHowe {
     /**
      * 推流域名 阿里云配置的推流域名
+     * alibaba:
+     *   pushDomain:
+     *
+     *   pullDomain:
+     *
+     *   pushAuthKey:
+     *
+     *   pullAuthKey:
+     *
      */
-    private static final String pushDomain = "推流域名";
+    private static final String pushDomain = "push.bajie188.com";
     /**
      * 拉流域名 阿里云配置的拉流域名
      */
-    private static final String pullDomain = "拉流域名";
+    private static final String pullDomain = "pull.bajie188.com";
     /**
      * appName
      */
-    private static final String appName = "随便起一个";
+    private static final String appName = "Appname";
 
-    private static final String streamName = "随便起一个";
+    private static final String streamName = "strar";
     /**
      * 推流的鉴权key:
      */
-    private static final String pushAuthKey = "xx";
+    private static final String pushAuthKey = "9i1oRW7aWI";
     /**
      * 播流的Key
      */
-    private static final String pullAuthKey = "xxx";
+    private static final String pullAuthKey = "wscAfesdtfcE";
 
     /**
      * 时间(单位是秒)

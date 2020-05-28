@@ -1357,8 +1357,12 @@ public class  test{
     }
     }
 ```
-## Lamda表达式: 
-- 总结:Lambda 表达式:只能有 一行代码的情况下 才能简化成一行  如果有多行 那么就用代码{} 包裹
+## Lamdba表达式: 
+[Lamdba表达式一篇足够](https://mp.weixin.qq.com/mp/homepage?__biz=MzAwMDYwMTkyMg==&hid=4&sn=59b74c07e94dcc6dd866b00a38002cc0&scene=1&clicktime=1589561800&devicetype=iOS12.0.1&version=17000c2d&lang=zh_CN&nettype=WIFI&ascene=0&fontScale=94&wx_header=1)
+[Java8新特性](https://blog.csdn.net/weixin_45225595/article/details/106203264)
+[Lambda表达式------java8 新特性](https://www.jianshu.com/p/207306c0da9d)
+[Stream API ------java8 新特性（2）](https://www.jianshu.com/p/0f473e933306)
+- 总结:Lamdba 表达式:只能有 一行代码的情况下 才能简化成一行  如果有多行 那么就用代码{} 包裹
 - 前提是接口为函数式接口 函数式接口 : 一个接口下只能由一个 接口
 - 多个参数:多个参数也可以去掉参数类型 要去掉就去掉
 ```java
